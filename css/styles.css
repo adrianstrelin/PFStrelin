@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile First */
+/* INICIO */
+
+body {
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+
+.navMain,
+.navMenu,
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navMain,
+.navMenu,
+.source,
+.imagenesComida,
+.imagenesChefs,
+.imagenesValoracion,
+. {
+    color: white;
+    border: 3px solid black;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 3em;
+    background-color: wheat;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+/* NOMBRE DE AREAS INICIO */
+
+header {
+    grid-area: header;
+}
+
+.navMain {
+    grid-area: navMain;
+}
+
+.navBrand {
+    grid-area: navBrand;
+}
+
+.navMenu {
+    grid-area: navMenu;
+}
+
+.source {
+    grid-area: source;
+}
+
+.imagenesComida {
+    grid-area: imagenesComida;
+}
+
+.textoChefs {
+    grid-area: textoChefs;
+}
+
+.imagenesChefs {
+    grid-area: imagenesChefs;
+}
+
+.textoValoracion {
+    grid-area: textoValoracion;
+}
+
+.imagenesValoracion {
+    grid-area: imagenesValoracion;
+}
+
+
+.imagenSuscripcion {
+    grid-area: imagenSuscripcion;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.contenedor {
+    background-color: white;
+    margin-bottom: 1.5em;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "navBrand"
+        "navMain"
+        "header"
+        "source"
+        "imagenesComida"
+        "textoChefs"
+        "imagenesChefs"
+        "textoValoracion"
+        "imagenesValoracion"
+        "imagenSuscripcion"
+        "footer";
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.navBrand {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 20vw;
+    width: 20vw;
+}
+
+.navMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5vw;
+}
+
+.source {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5vw;
+}
+
+.primerParrafo {
+    margin-bottom: 5vw;
+}
+
+.imagenesComida {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 3vw;
+}
+
+.textoChefs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+}
+
+
+.imagenesChefs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.parrafoChefs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 5vw 5vw;
+}
+
+.textoValoracion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+}
+
+.imagenesValoracion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+.imagenSuscripcion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-image: url(https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4199098.jpg&fm=jpg);
+    height: 50vw;
+    width: auto;
+    background-size: 75vw;
+}
+
+.textoSuscripcionUno h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 5vw;
+    margin-top: 5vw;
+}
+
+.textoSuscripcionDos h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3vw;
+    margin-bottom: 4vw;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:23vw;
+}
+
+input{
+   border-radius: 2vw;
+   position: flex;
+   flex-direction: row;
+   width: 29vw;
+   height: 4vw;
+   text-align: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 0;
+    width: auto;
+    height: 150vw;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 5vw;
+    margin-top: 12vw;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-bottom: 7vw;
+}
+
+.textoRedesUno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.textoRedesDos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -4vw;
+}
+
+
+
+@media (min-width: 500px) {
+
+    /* INICIO */
+    .contenedor {
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "navBrand navBrand"
+            "navMain navMain"
+            "header header"
+            "source source"
+            "imagenesComida imagenesComida"
+            "textoChefs textoChefs"
+            "imagenesChefs imagenesChefs"
+            "textoValoracion textoValoracion"
+            "imagenesValoracion imagenesValoracion"
+            "imagenSuscripcion imagenSuscripcion"
+            "footer footer";
+    }
+
+
+
+    .navMain {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 5vw;
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4vw;
+    }
+
+
+
+    .imagenesComida {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3vw;
+    }
+
+
+    .imagenesChefs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .parrafoChefs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .imagenesValoracion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    .imagenSuscripcion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-image: url(https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4199098.jpg&fm=jpg);
+        height: 50vw;
+        width: auto;
+        background-size: 75vw;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 0;
+        width: auto;
+        height: 150vw;
+    }
+
+    .footerMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 3vw;
+        margin-bottom: 5vw;
+        margin-top: 10vw;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 15vw;
+        width: 35vw;
+        margin-left: 26vw;
+        margin-bottom: -1vw;
+        align-items: flex-start;
+    }
+
+
+
+    @media (min-width: 768px) {
+        .contenedor {
+            margin-bottom: 1, 5em;
+            grid-template-columns: 1fr 1f 1fr;
+            grid-template-areas:
+                "navBrand navBrand navBrand"
+                "navMain navMain navMain"
+                "header header header"
+                "source source source"
+                "imagenesComida imagenesComida imagenesComida"
+                "textoChefs textoChefs textoChefs"
+                "imagenesChefs imagenesChefs imagenesChefs"
+                "textoValoracion textoValoracion textoValoracion"
+                "imagenesValoracion imagenesValoracion imagenesValoracion"
+                "imagenSuscripcion imagenSuscripcion imagenSuscripcion"
+                "footer footer footer";
+        }
+
+
+
+        .navMain {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 5vw;
+        }
+
+        .navMenu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10vw;
+        }
+
+
+
+        .imagenesComida {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 3vw;
+        }
+
+
+        .imagenesChefs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .parrafoChefs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 7vw;
+            width: 5vw;
+        }
+
+
+        .imagenesValoracion {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+
+        .imagenSuscripcion {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            background-image: url(https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4199098.jpg&fm=jpg);
+            height: 30vw;
+            width: auto;
+            background-size: 45vw;
+        }
+
+        .textoSuscripcionUno h3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 3vw;
+            margin-top: 2vw;
+        }
+        
+        .textoSuscripcionDos h4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 2vw;
+            margin-bottom: 2vw;
+            margin-top: 2vw;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            margin-bottom: 0;
+            width: auto;
+            height: 150vw;
+        }
+
+        .redes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 10vw;
+            width: 35vw;
+            margin-left: 28vw;
+        }
+
+        .textoRedesUno {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 1vw;
+        }
