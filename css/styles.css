@@ -105,7 +105,25 @@ footer {
     grid-area: footer;
 }
 
+/* NOMBRE AREAS RECETAS */
 
+.destacadaMesTitulo {
+    grid-area: destacadaMesTitulo;
+}
+
+.menuRecetas {
+    grid-area: menuRecetas;
+}
+
+.contenedorRecetas {
+    grid-area: contenedorRecetas;
+}
+
+.imagenesRecetas {
+    grid-area: imagenesRecetas;
+}
+
+/* INICIO */
 .contenedor {
     background-color: white;
     margin-bottom: 1.5em;
@@ -289,6 +307,13 @@ input{
     justify-content: center;
     margin-bottom: -4vw;
 }
+
+/* RECETAS */
+
+
+
+
+
 
 
 
