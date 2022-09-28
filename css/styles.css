@@ -51,11 +51,11 @@ a:link {
 }
 
 a:hover {
-    color: wheat;
+    color: orange;
 }
 
 a:visited {
-    color: orange;
+    color: grey;
 }
 
 a:active {
@@ -313,7 +313,7 @@ input {
 }
 
 .botonSuscripcion {
-    width: 16vw;
+    width: 18vw;
     height: 6vw;
     background-color: wheat;
 
