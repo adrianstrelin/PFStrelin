@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -14,41 +14,56 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
 
 header {
     font-size: large;
     display: grid;
     justify-content: center;
+    font-family: 'Courgette', cursive;
 }
 
-.navMain,
-.navMenu,
-li {
+header h1 {
+    font-size: 6vw;
+}
+
+
+.orange {
+    background-color: #FAD7A0;
+}
+
+.colorNav {
+    color: wheat;
+}
+
+ul {
     list-style-type: none;
-    text-decoration: none;
 }
 
-.navMain,
-.navMenu,
-.source,
-.imagenesComida,
-.imagenesChefs,
-.imagenesValoracion,
-. {
-    color: white;
-    border: 3px solid black;
-    text-decoration: none;
-
-}
 
 a {
     text-decoration: none;
+    color: wheat;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: wheat;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:active {
+    color: black;
 }
 
 footer {
-    padding: 3em;
+    padding: 3em 3em 0em 3em;
     background-color: wheat;
     margin-bottom: 0;
     margin-top: 1.5em;
@@ -60,17 +75,10 @@ header {
     grid-area: header;
 }
 
-.navMain {
-    grid-area: navMain;
-}
-
 .navBrand {
     grid-area: navBrand;
 }
 
-.navMenu {
-    grid-area: navMenu;
-}
 
 .source {
     grid-area: source;
@@ -115,7 +123,7 @@ footer {
     grid-area: menuRecetas;
 }
 
-.contenedorRecetas {
+.sectionRecetas {
     grid-area: contenedorRecetas;
 }
 
@@ -123,18 +131,19 @@ footer {
     grid-area: imagenesRecetas;
 }
 
+.destacadaMesTitulo {
+    grid-area: destacadaMesTitulo;
+}
+
 /* INICIO */
 .contenedor {
     background-color: white;
     margin-bottom: 1.5em;
     display: grid;
-    gap: 20px;
     grid-template-areas:
         "navBrand"
-        "navMain"
         "header"
         "source"
-        "imagenesComida"
         "textoChefs"
         "imagenesChefs"
         "textoValoracion"
@@ -152,22 +161,18 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 20vw;
-    width: 20vw;
+    height: 40vw;
+    width: 40vw;
+    margin-left: 15vw;
 }
 
-.navMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 5vw;
-}
 
 header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin-bottom: 5vw;
+    margin-bottom: 15vw;
+    margin-top: 13vw;
 }
 
 .source {
@@ -177,23 +182,40 @@ header {
     margin-bottom: 5vw;
 }
 
-.primerParrafo {
-    margin-bottom: 5vw;
+.lineaSourceCarrusel {
+    height: 5vw;
+    width: 76%;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    margin-bottom: -3.5vw;
 }
 
-.imagenesComida {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 3vw;
+.slide {
+    margin-top: 5vw;
 }
+
+.slide img {
+    height: 70vw;
+}
+
+.primerParrafo {
+    margin-bottom: 12vw;
+}
+
+.lineaCarruselChef {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 7vw;
+}
+
 
 .textoChefs {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin-top: 10vw;
-    margin-bottom: 3vw;
+    margin-top: 8vw;
+    margin-bottom: 5vw;
 }
 
 
@@ -201,6 +223,10 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    height: 501vw;
+    width: 62vw;
+    margin-left: 20vw;
+    gap: 1vw;
 }
 
 .parrafoChefs {
@@ -208,6 +234,24 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin: 5vw 5vw;
+    text-decoration: none;
+    color: black;
+    height: 12vw;
+    text-align:center;
+    background-color: #FFEFD5;
+    border-radius: 2vw;
+    margin: 4vw;
+}
+
+.parrafoChefs:hover {
+    box-shadow: 0 0 0.5vw black;
+}
+
+.lineaChefValoracion {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 6vw;
 }
 
 .textoValoracion {
@@ -229,10 +273,11 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background-image: url(https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4199098.jpg&fm=jpg);
+    background-image: url(../img/imagensuscripciondos.jpg);
     height: 50vw;
     width: auto;
-    background-size: 75vw;
+    background-size: 100vw;
+    color: wheat;
 }
 
 .textoSuscripcionUno h3 {
@@ -255,16 +300,23 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom:23vw;
+    margin-bottom: 23vw;
 }
 
-input{
-   border-radius: 2vw;
-   position: flex;
-   flex-direction: row;
-   width: 29vw;
-   height: 4vw;
-   text-align: center;
+input {
+    border-radius: 2vw;
+    position: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 5.5vw;
+    text-align: center;
+}
+
+.botonSuscripcion {
+    width: 16vw;
+    height: 6vw;
+    background-color: wheat;
+
 }
 
 .footer {
@@ -276,13 +328,20 @@ input{
     height: 150vw;
 }
 
+.lineaFooter {
+    margin-top: 11vw;
+}
+
+
 .footerMenu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 3vw;
     margin-bottom: 5vw;
-    margin-top: 12vw;
+    margin-top: 8vw;
+    font-size: 2.5vw;
+    margin-left: 3vw;
 }
 
 .redes {
@@ -308,16 +367,97 @@ input{
     margin-bottom: -4vw;
 }
 
+.textoRedesTres h4 {
+    font-size: 2vw;
+    margin-top: 10vw;
+}
+
+.textoContactos h5 {
+    font-size: 2vw;
+}
+
 /* RECETAS */
 
+.tituloRecetas {
+    margin-bottom: -5vw;
+}
+
+.lineaImagenesRecetasUno {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+}
+
+.lineaImagenesRecetasDos {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: -6vw;
+    margin-bottom: 5vw;
+}
+
+.contenedorRecetas {
+    background-color: white;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "imagenesRecetas"
+        "sectionRecetas"
+        "imagenSuscripcion"
+        "footer";
+}
+
+.muchasRecetas {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 12vw;
+}
+
+
+.tituloRecetas {
+    margin-top: -4vw;
+    margin-bottom: -5vw;
+}
+
+
+.imagenesRecetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: 3vw;
+}
+
+.imagenRecetaUno img, .imagenRecetaDos img, .imagenRecetaTres img, .imagenRecetaCuatro img, .imagenRecetaCinco img, .imagenRecetaSeis img {
+    box-shadow: 0 0 1vw black;
+}
+
+.enlaceRecetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 5vw 5vw;
+    text-decoration: none;
+    height: 5vw;
+    text-align:center;
+    background-color: #FFEFD5;
+    border-radius: 1vw;
+    margin: 4vw;
+}
+
+.lineaRecetasSuscripcion {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: -6vw;
+    margin-bottom: 6vw;
+}
 
 
 
-
-
-
-
-@media (min-width: 500px) {
+@media (min-width: 576px) {
 
     /* INICIO */
     .contenedor {
@@ -325,10 +465,8 @@ input{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "navBrand navBrand"
-            "navMain navMain"
             "header header"
             "source source"
-            "imagenesComida imagenesComida"
             "textoChefs textoChefs"
             "imagenesChefs imagenesChefs"
             "textoValoracion textoValoracion"
@@ -337,42 +475,41 @@ input{
             "footer footer";
     }
 
+    header {
+    margin-bottom: 12vw;
+    margin-top: 10vw;
 
-
-    .navMain {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 5vw;
     }
 
-    .navMenu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 4vw;
+    .lineaSourceCarrusel {
+        height: 5vw;
+        width: 160%;
+        margin-left: 10vw;
+        margin-top: 3vw;
+        margin-bottom: 2vw;
     }
 
-
-
-    .imagenesComida {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 3vw;
+    .source input {
+        text-align: center;
+        margin-top: 3vw;
     }
-
 
     .imagenesChefs {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        height: 209vw;
+        width: 81vw;
+        gap: 1vw;
+        margin-left: 11vw;
     }
 
     .parrafoChefs {
         display: flex;
         flex-direction: row;
         align-items: center;
+        width: 38vw;
+        height: 10vw;
     }
 
 
@@ -383,16 +520,27 @@ input{
     }
 
 
-
     .imagenSuscripcion {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        background-image: url(https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4199098.jpg&fm=jpg);
-        height: 50vw;
-        width: auto;
-        background-size: 75vw;
+        background-image: url(../img/imagensuscripciondos.jpg);
     }
+
+    .textoSuscripcionUno h3 {
+        margin-right: 5vw;
+        font-size: 5vw;
+    }
+
+    .textoSuscripcionDos h4 {
+        font-size: 3vw;
+        margin-bottom: 1vw;
+        margin-right: 36vw;
+    }
+
+    
+    .botonSuscripcion {
+        margin-right: 18vw;
+        margin-top: 2vw;
+    }
+
 
     .footer {
         display: grid;
@@ -423,6 +571,101 @@ input{
         align-items: flex-start;
     }
 
+    .redes a {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    /* RECETAS */
+    
+    .tituloRecetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0vw;
+        margin-top: -9vw;
+
+    }
+
+    .lineaImagenesRecetasUno {
+        height: 5vw;
+        width: 80%;
+        margin-left: 10vw;
+        margin-top: -10vw;
+    }
+
+    .lineaImagenesRecetasDos {
+        height: 5vw;
+        width: 80%;
+        margin-left: 10vw;
+        margin-top: -7vw;
+    }
+
+    .lineaRecetasSuscripcion {
+        margin-top: -3vw;
+        margin-bottom: 3vw;
+    }
+
+    .imagenesRecetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3vw;
+        align-items: center;
+    }
+    
+    .sectionRecetas {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+        gap: 6vw;
+        columns: 2;
+    }
+
+    .ulRecetas {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2; 
+    }
+
+    .enlaceRecetas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 5vw 5vw;
+        text-decoration: none;
+        height: 8vw;
+        text-align:center;
+        background-color: #FFEFD5;
+        border-radius: 1vw;
+        margin: 4vw;
+    }
+
+    .muchasRecetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: -3vw;
+        margin-bottom: 5vw;
+    }
+
+    .muchasRecetasUno {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 7vw;
+    }
+    
+    .muchasRecetasDos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 7vw;
+    }
+
 
 
     @media (min-width: 768px) {
@@ -431,10 +674,8 @@ input{
             grid-template-columns: 1fr 1f 1fr;
             grid-template-areas:
                 "navBrand navBrand navBrand"
-                "navMain navMain navMain"
                 "header header header"
                 "source source source"
-                "imagenesComida imagenesComida imagenesComida"
                 "textoChefs textoChefs textoChefs"
                 "imagenesChefs imagenesChefs imagenesChefs"
                 "textoValoracion textoValoracion textoValoracion"
@@ -443,36 +684,57 @@ input{
                 "footer footer footer";
         }
 
+        /* INICIO */
 
+        header {
+            margin-bottom: 6vw;
+            margin-top: 4vw;
+            }
 
-        .navMain {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-bottom: 5vw;
-        }
+            .primerParrafo {
+                margin-bottom: 5vw;
+            }
+        
+            .lineaSourceCarrusel {
+                height: 5vw;
+                width: 160%;
+                margin-left: 10vw;
+                margin-top: 2vw;
+                margin-bottom: -1vw;
+            }
+        
+            .source input {
+                text-align: center;
+                margin-top: 3vw;
+            }
 
-        .navMenu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 10vw;
-        }
-
-
-
-        .imagenesComida {
+        .navBrand {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 3vw;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            height: 30vw;
+            width: 30vw;
+            margin-left: 17vw;
+        }
+
+        .lineaCarruselChef {
+            margin-left: 10vw;
+            margin-top: 4vw;
+        }
+
+        .textoChefs {
+            margin-top: 4vw;
         }
 
 
         .imagenesChefs {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            height: 65vw;
+            width: 89vw;
+            gap: 1vw;
+            margin-left: 7vw;
         }
 
         .parrafoChefs {
@@ -480,7 +742,12 @@ input{
             flex-direction: row;
             align-items: center;
             height: 7vw;
-            width: 5vw;
+            width: 14vw;
+            margin-top: 6vw;
+        }
+
+        .textoValoracion {
+            margin-top: 5vw;
         }
 
 
@@ -488,7 +755,14 @@ input{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr;
-            box-shadow: 40px 6px 33px 13px rgba(0,0,0,0.1);
+            box-shadow: 40px 6px 33px 13px rgba(0, 0, 0, 0.1);
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .efectoImagenValoracion:hover {
+            transform: scale(1.1);
+
         }
 
 
@@ -496,27 +770,37 @@ input{
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            background-image: url(https://images.pexels.com/photos/4199098/pexels-photo-4199098.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4199098.jpg&fm=jpg);
-            height: 30vw;
+            background-image: url(../img/imagensuscripciondos.jpg);
+            height: 40vw;
             width: auto;
-            background-size: 45vw;
+            background-size: 100vw;
+            color: wheat;
         }
-
+    
         .textoSuscripcionUno h3 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            margin-right: 23vw;
+            font-size: 4vw;
+        }
+    
+        .textoSuscripcionDos h4 {
             font-size: 3vw;
+            margin-bottom: 2vw;
+            margin-right: 36vw;
             margin-top: 2vw;
+        }
+    
+        input {
+            text-align: center;
+            height: 3vw;
+            width: 37vw;
         }
         
-        .textoSuscripcionDos h4 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            font-size: 2vw;
-            margin-bottom: 2vw;
+        .botonSuscripcion {
+            height: 3vw;
+            width: 10vw;
+            margin-right: 37vw;
             margin-top: 2vw;
+            border-radius: 1vw solid black;
         }
 
         .footer {
@@ -525,21 +809,126 @@ input{
             grid-template-rows: 1fr;
             margin-bottom: 0;
             width: auto;
-            height: 150vw;
+        }
+
+        .tamañoFooter {
+            height: 19.5vw;
+        }
+
+        .lineaFooter {
+            margin-top: 9vw;
+        }
+
+        .footerMenu {
+            margin-top: 5vw;
+            font-size: 1.7vw;
         }
 
         .redes {
             display: flex;
             flex-direction: row;
             align-items: center;
-            height: 10vw;
             width: 35vw;
-            margin-left: 28vw;
+            margin-left: 50vw;
+            margin-top: 3vw;
         }
+
+        .redes a {
+            width: 4vw;
+            height: 6vw;
+            margin-left: 7vw;
+        }
+
 
         .textoRedesUno {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            margin-bottom: 1vw;
+            justify-content: flex-start;
+            margin-bottom: -12.5vw;
+            margin-top: 1vw;
         }
+
+        .textoRedesUno h3 {
+            font-size: 3vw;
+        }
+
+        .textoRedesDos {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .textoRedesDos h3 {
+            font-size: 2vw;
+        }
+
+        
+        .textoRedesTres h4 {
+            font-size: 2vw;
+            margin-top: 10vw;
+            }
+        
+        .textoContactos h5 {
+            font-size: 2vw;
+        }
+
+        
+
+        /* RECETAS */
+
+
+        .tituloRecetas {
+            margin-left: -1vw;
+            margin-top: -1vw;
+        }
+    
+        .lineaImagenesRecetasUno {
+            height: 5vw;
+            width: 80%;
+            margin-left: 10vw;
+            margin-top: 3vw;
+        }
+    
+        .lineaImagenesRecetasDos {
+            height: 5vw;
+            width: 80%;
+            margin-left: 10vw;
+            margin-top: -6vw;
+        }
+    
+        .lineaRecetasSuscripcion {
+            margin-top: -3vw;
+            margin-bottom: 3vw;
+        }
+
+
+        .imagenesRecetas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 4vw;
+            align-items: center;
+        }
+
+
+        .BorderBottom a:hover {
+            border-bottom: 3px solid wheat;
+        }
+
+        .enlaceRecetas {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            text-decoration: none;
+            height: 10vw;
+            align-items: center;
+            background-color: #FFEFD5;
+            border-radius: 1vw;
+            margin: 4vw;
+            width: auto;
+        }
+
+        .enlaceRecetas:hover {
+            box-shadow: 0 0 1vw black;
+        }
+
