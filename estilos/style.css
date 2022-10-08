@@ -7,13 +7,8 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
   text-align: center;
   font-weight: bolder;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   letter-spacing: 0, 3em;
 }
 
@@ -402,7 +397,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  height: 501vw;
+  height: 454vw;
   width: 62vw;
   margin-left: 20vw;
   gap: 1vw;
@@ -415,11 +410,12 @@ header {
   margin: 5vw 5vw;
   text-decoration: none;
   color: black;
-  height: 12vw;
+  max-height: 10vw;
   text-align: center;
   background-color: wheat;
   border-radius: 2vw;
   margin: 4vw;
+  font-weight: 400;
 }
 
 .parrafoChefs:hover {
@@ -477,7 +473,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 38vw;
+    min-width: 30vw;
     height: 10vw;
   }
   .imagenesValoracion {
@@ -528,8 +524,8 @@ header {
     margin-left: 7vw;
   }
   .parrafoChefs {
-    height: 7vw;
-    width: 14vw;
+    min-height: 7vw;
+    min-width: 14vw;
     margin-top: 6vw;
   }
   .textoValoracion {
@@ -615,7 +611,7 @@ header {
 }
 
 .imagenRecetaUno img, .imagenRecetaDos img, .imagenRecetaTres img, .imagenRecetaCuatro img, .imagenRecetaCinco img, .imagenRecetaSeis img {
-  box-shadow: 0 0 1vw black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .enlaceRecetas {
@@ -623,8 +619,9 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin: 5vw 5vw;
+  font-weight: 400;
   text-decoration: none;
-  height: 5vw;
+  max-height: 10vw;
   text-align: center;
   background-color: wheat;
   border-radius: 1vw;
@@ -734,7 +731,7 @@ header {
     width: auto;
   }
   .enlaceRecetas:hover {
-    box-shadow: 0 0 1vw black;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   }
 }
 /*NOMBREA AREAS DE TIPS DE COCINA*/
@@ -955,54 +952,159 @@ video {
   background-color: white;
   margin-bottom: 1.5em;
   display: grid;
-  grid-template-areas: "contenedorGrid" "contenedorCards" "card";
-}
-
-.contenedorGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
+  justify-items: center;
+  grid-template-areas: "contenedorCards" "cardUno" "cardDos" "cardTres" "cardCuatro" "cardCinco" "cardSeis";
 }
 
 .contenedorCards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
-.contenedorCards .card {
-  width: 330px;
-  height: 430px;
-  border-radius: 8px;
+.contenedorCards .cardUno,
+.cardDos,
+.cardTres,
+.cardCuatro,
+.cardCinco,
+.cardSeis {
+  width: 68.75vw;
+  min-height: 89.5vw;
+  border-radius: 1, 6vw;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
+  margin: 4.1vw;
   text-align: center;
   transition: all 0.25s;
 }
 
-.contenedorCards .card:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+.contenedorCards .cardUno:hover,
+.cardDos:hover,
+.cardTres:hover,
+.cardCuatro:hover,
+.cardCinco:hover,
+.cardSeis:hover {
+  transform: translateY(-3.1vw);
+  box-shadow: 0 2.5vw 3, 3vw rgba(0, 0, 0, 0.2);
 }
 
-.contenedorCards .card picture img {
-  width: 330px;
-  height: 220px;
+.contenedorCards .cardUno picture img,
+.cardDos picture img,
+.cardTres picture img,
+.cardCuatro picture img,
+.cardCinco picture img,
+.cardSeis picture img {
+  width: 68vw;
+  height: 45.8vw;
 }
 
-.contenedorCards .card h2 {
+.contenedorCards .cardUno h2,
+.cardDos h2,
+.cardTres h2,
+.cardCuatro h2,
+.cardCinco h2,
+.cardSeis h2 {
   font-weight: 600;
 }
 
-.contenedorCards .card p {
+.contenedorCards .cardUno p,
+.cardDos p,
+.cardTres p,
+.cardCuatro p,
+.cardCinco p,
+.cardSeis p {
   padding: 0 1rem;
-  font-size: 16px;
+  font-size: 3.3vw;
   font-weight: 300;
 }
 
-.contenedorCards .card a {
+.contenedorCards .cardUno a,
+.cardDos a,
+.cardTres a,
+.cardCuatro a,
+.cardCinco a,
+.cardSeis a {
   font-weight: 500;
   text-decoration: none;
+}
+
+.lineaSaludNutricion {
+  height: 5vw;
+  width: 80%;
+  margin-left: 10vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.lineaSaludNutricionDos {
+  height: 5vw;
+  width: 80%;
+  margin-left: 10vw;
+  margin-top: -1vw;
+  margin-bottom: 7vw;
+}
+
+@media (min-width: 576px) {
+  .contenedorSaludNutricion {
+    grid-template-areas: "contenedorCards contenedorCards" "cardUno cardUno" "cardDos cardDos" "cardTres cardTres" "cardCuatro cardCuatro" "cardCinco cardCinco" "cardSeis cardSeis";
+  }
+  .contenedorCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
+  .contenedorCards .cardUno,
+.cardDos,
+.cardTres,
+.cardCuatro,
+.cardCinco,
+.cardSeis {
+    width: 68.75vw;
+    min-height: 89.5vw;
+    border-radius: 1, 6vw;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 4.1vw;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .cardUno,
+.cardDos,
+.cardTres,
+.cardCuatro,
+.cardCinco,
+.cardSeis {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contenedorCards .cardUno:hover,
+.cardDos:hover,
+.cardTres:hover,
+.cardCuatro:hover,
+.cardCinco:hover,
+.cardSeis:hover {
+    transform: translateY(-3.1vw);
+    box-shadow: 0 2.5vw 3, 3vw rgba(0, 0, 0, 0.2);
+  }
+  .contenedorCards .cardUno picture img,
+.cardDos picture img,
+.cardTres picture img,
+.cardCuatro picture img,
+.cardCinco picture img,
+.cardSeis picture img {
+    width: 68vw;
+    height: 45.8vw;
+  }
+}
+@media (min-width: 768px) {
+  .contenedorSaludNutricion {
+    grid-template-areas: "contenedorCards contenedorCards contenedorCards" "card card card";
+  }
+  .contenedorCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

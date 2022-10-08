@@ -115,7 +115,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 501vw;
+    height: 454vw;
     width: 62vw;
     margin-left: 20vw;
     gap: 1vw;
@@ -128,11 +128,12 @@ header {
     margin: 5vw 5vw;
     text-decoration: none;
     color: black;
-    height: 12vw;
+    max-height: 10vw;
     text-align:center;
     background-color: $colorGeneral;
     border-radius: 2vw;
     margin: 4vw;
+    font-weight: 400;
 }
 
 .parrafoChefs:hover {
@@ -206,7 +207,7 @@ header {
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 38vw;
+        min-width: 30vw;
         height: 10vw;
     }
 
@@ -279,8 +280,8 @@ header {
     }
 
     .parrafoChefs {
-        height: 7vw;
-        width: 14vw;
+        min-height: 7vw;
+        min-width: 14vw;
         margin-top: 6vw;
     }
 

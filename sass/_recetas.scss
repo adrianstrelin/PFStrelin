@@ -76,7 +76,7 @@
 }
 
 .imagenRecetaUno img, .imagenRecetaDos img, .imagenRecetaTres img, .imagenRecetaCuatro img, .imagenRecetaCinco img, .imagenRecetaSeis img {
-    box-shadow: 0 0 1vw black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .enlaceRecetas {
@@ -84,8 +84,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     margin: 5vw 5vw;
+    font-weight: 400;
     text-decoration: none;
-    height: 5vw;
+    max-height: 10vw;
     text-align:center;
     background-color: $colorGeneral;
     border-radius: 1vw;
@@ -217,6 +218,6 @@
     }
 
     .enlaceRecetas:hover {
-        box-shadow: 0 0 1vw black;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     }
 }
