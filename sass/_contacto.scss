@@ -1,0 +1,42 @@
+.btn-dark {
+    background-color: $colorGeneral;
+    color: black;
+    margin: 4vw 0 4vw 0;
+}
+
+.lineaContactos {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 6vw;
+}
+
+@media (min-width: 576px) {
+
+    .lineaContactos {
+        width: 60%;
+        margin-left: 20vw;
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+
+    .tituloContacto {
+        margin-bottom: 4vw;
+    }
+
+    .lineaContactos {
+        height: 5vw;
+        width: 70%;
+        margin-left: 15vw;
+        margin-bottom: 6vw;
+    }
+
+
+
+
+}

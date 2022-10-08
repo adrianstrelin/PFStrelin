@@ -1,0 +1,222 @@
+/* NOMBRE AREAS RECETAS */
+
+.destacadaMesTitulo {
+    grid-area: destacadaMesTitulo;
+}
+
+.menuRecetas {
+    grid-area: menuRecetas;
+}
+
+.sectionRecetas {
+    grid-area: contenedorRecetas;
+}
+
+.imagenesRecetas {
+    grid-area: imagenesRecetas;
+}
+
+.destacadaMesTitulo {
+    grid-area: destacadaMesTitulo;
+}
+
+
+/* RECETAS */
+
+.tituloRecetas {
+    margin-bottom: -5vw;
+}
+
+.lineaImagenesRecetasUno {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+}
+
+.lineaImagenesRecetasDos {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: -6vw;
+    margin-bottom: 5vw;
+}
+
+.contenedorRecetas {
+    background-color: white;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "imagenesRecetas"
+        "sectionRecetas"
+        "imagenSuscripcion"
+        "footer";
+}
+
+.muchasRecetas {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 12vw;
+}
+
+
+.tituloRecetas {
+    margin-top: -4vw;
+    margin-bottom: -5vw;
+}
+
+
+.imagenesRecetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: 3vw;
+}
+
+.imagenRecetaUno img, .imagenRecetaDos img, .imagenRecetaTres img, .imagenRecetaCuatro img, .imagenRecetaCinco img, .imagenRecetaSeis img {
+    box-shadow: 0 0 1vw black;
+}
+
+.enlaceRecetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 5vw 5vw;
+    text-decoration: none;
+    height: 5vw;
+    text-align:center;
+    background-color: $colorGeneral;
+    border-radius: 1vw;
+    margin: 4vw;
+}
+
+.lineaRecetasSuscripcion {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: -6vw;
+    margin-bottom: 6vw;
+}
+
+@media (min-width: 576px) {
+    
+    .tituloRecetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0vw;
+        margin-top: -9vw;
+
+    }
+
+    .lineaImagenesRecetasUno {
+        margin-left: 10vw;
+        margin-top: -10vw;
+    }
+
+    .lineaImagenesRecetasDos {
+        margin-left: 10vw;
+        margin-top: -7vw;
+    }
+
+    .lineaRecetasSuscripcion {
+        margin-top: -3vw;
+        margin-bottom: 3vw;
+    }
+
+    .imagenesRecetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3vw;
+    }
+    
+    .sectionRecetas {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+        gap: 6vw;
+        columns: 2;
+    }
+
+    .ulRecetas {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2; 
+    }
+
+    .enlaceRecetas {
+        height: 8vw;
+    }
+
+    .muchasRecetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: -3vw;
+        margin-bottom: 5vw;
+    }
+
+    .muchasRecetasUno {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 7vw;
+    }
+    
+    .muchasRecetasDos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 7vw;
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* RECETAS */
+
+    .tituloRecetas {
+        margin-left: -1vw;
+        margin-top: -1vw;
+    }
+
+    .lineaImagenesRecetasUno {
+        height: 5vw;
+        width: 80%;
+        margin-top: 3vw;
+    }
+
+    .lineaImagenesRecetasDos {
+        height: 5vw;
+        width: 80%;
+        margin-top: -6vw;
+    }
+
+
+    .imagenesRecetas {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 4vw;
+        align-items: center;
+    }
+
+
+    .BorderBottom a:hover {
+        border-bottom: 3px solid wheat;
+    }
+
+    .enlaceRecetas {
+        height: 10vw;
+        align-items: center;
+        border-radius: 1vw;
+        width: auto;
+    }
+
+    .enlaceRecetas:hover {
+        box-shadow: 0 0 1vw black;
+    }
+}

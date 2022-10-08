@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    letter-spacing: 0,03em;
+}
+
+header {
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+    h1 {
+        font-size: 6vw;
+    }
+}
+
+
+.navBrand {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 40vw;
+    width: 40vw;
+    margin-left: 15vw;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.orange {
+    background-color: $colorGeneral;
+}
+
+.colorNav {
+    color: $colorGeneral;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: $colorGeneral;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:active {
+    color: black;
+}
+
+footer {
+    padding: 3em 3em 0em 3em;
+    background-color: $colorGeneral;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+
+
+.imagenSuscripcion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-image: $fondoSuscripcion;
+    height: 50vw;
+    width: auto;
+    background-size: 100vw;
+    color:$colorGeneral;
+}
+
+.textoSuscripcionUno h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 5vw;
+    margin-top: 5vw;
+}
+
+.textoSuscripcionDos h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3vw;
+    margin-bottom: 4vw;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 23vw;
+}
+
+input {
+    border-radius: 2vw;
+    position: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 5.5vw;
+    text-align: center;
+}
+
+.botonSuscripcion {
+    width: 18vw;
+    height: 6vw;
+    background-color: $colorGeneral;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 0;
+    width: auto;
+    height: 150vw;
+    position: fixed;
+}
+
+.lineaFooter {
+    margin-top: 11vw;
+}
+
+
+.footerMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    margin: 8vw 0 5vw 0;
+    font-size: 2.5vw;
+    margin-left: 2.5vw;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-bottom: 7vw;
+}
+
+.textoRedesUno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+
+.textoRedesDos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -4vw;
+}
+
+.textoRedesTres h4 {
+    font-size: 2vw;
+    margin-top: 10vw;
+}
+
+.textoContactos h5 {
+    font-size: 2vw;
+}
+
+@media (min-width: 576px) {
+
+
+    .textoSuscripcionUno h3 {
+        margin-right: 5vw;
+        font-size: 5vw;
+    }
+
+    .textoSuscripcionDos h4 {
+        margin-bottom: 1vw;
+        margin-right: 36vw;
+    }
+
+    
+    .botonSuscripcion {
+        margin-right: 18vw;
+        margin-top: 2vw;
+    }
+
+
+    .footerMenu {
+        justify-content: space-evenly;
+        margin-top: 10vw;
+        margin-left: -0.5vw;
+    }
+
+    .redes {
+        align-items: center;
+        height: 15vw;
+        width: 35vw;
+        margin-left: 26vw;
+        margin-bottom: -1vw;
+        align-items: flex-start;
+    }
+
+    .redes a {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .imagenSuscripcion {
+        height: 40vw;
+    }
+
+    .textoSuscripcionUno h3 {
+        margin-right: 23vw;
+        font-size: 4vw;
+    }
+
+    .textoSuscripcionDos h4 {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+        margin-right: 36vw;
+        margin-top: 2vw;
+    }
+
+    input {
+        text-align: center;
+        height: 3vw;
+        width: 37vw;
+    }
+    
+    .botonSuscripcion {
+        height: 3vw;
+        width: 10vw;
+        margin-right: 37vw;
+        margin-top: 2vw;
+        border-radius: 1vw solid black;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .tamañoFooter {
+        height: 19.5vw;
+    }
+
+    .lineaFooter {
+        margin-top: 9vw;
+    }
+
+    .footerMenu {
+        margin-top: 5vw;
+        font-size: 1.7vw;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 35vw;
+        margin-left: 50vw;
+        margin-top: 3vw;
+    }
+
+    .redes a {
+        width: 4vw;
+        height: 6vw;
+        margin-left: 7vw;
+    }
+
+
+    .textoRedesUno {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: -12.5vw;
+        margin-top: 1vw;
+    }
+
+    .textoRedesUno h3 {
+        font-size: 3vw;
+    }
+
+    .textoRedesDos {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .textoRedesDos h3 {
+        font-size: 2vw;
+    }
+
+    
+    .textoRedesTres h4 {
+        font-size: 2vw;
+        margin-top: 10vw;
+        }
+    
+    .textoContactos h5 {
+        font-size: 2vw;
+    }
+    }

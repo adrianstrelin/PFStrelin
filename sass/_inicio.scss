@@ -1,0 +1,305 @@
+/* NOMBRE DE AREAS INICIO */
+
+header {
+    grid-area: header;
+}
+
+.navBrand {
+    grid-area: navBrand;
+}
+
+.source {
+    grid-area: source;
+}
+
+.imagenesComida {
+    grid-area: imagenesComida;
+}
+
+.textoChefs {
+    grid-area: textoChefs;
+}
+
+.imagenesChefs {
+    grid-area: imagenesChefs;
+}
+
+.textoValoracion {
+    grid-area: textoValoracion;
+}
+
+.imagenesValoracion {
+    grid-area: imagenesValoracion;
+}
+
+
+.imagenSuscripcion {
+    grid-area: imagenSuscripcion;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* INICIO */
+
+.contenedor {
+    background-color: white;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+        "navBrand"
+        "header"
+        "source"
+        "textoChefs"
+        "imagenesChefs"
+        "textoValoracion"
+        "imagenesValoracion"
+        "imagenSuscripcion"
+        "footer";
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 15vw;
+    margin-top: 13vw;
+}
+
+.source {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 5vw;
+}
+
+.lineaSourceCarrusel {
+    height: 5vw;
+    width: 76%;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    margin-bottom: -3.5vw;
+}
+.slide {
+    margin-top: 5vw;
+    img {
+        height: 70vw;
+}
+}
+
+.primerParrafo {
+    margin-bottom: 12vw;
+    font-weight: 300;
+}
+
+.lineaCarruselChef {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 7vw;
+}
+
+
+.textoChefs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+}
+
+
+.imagenesChefs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 501vw;
+    width: 62vw;
+    margin-left: 20vw;
+    gap: 1vw;
+}
+
+.parrafoChefs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 5vw 5vw;
+    text-decoration: none;
+    color: black;
+    height: 12vw;
+    text-align:center;
+    background-color: $colorGeneral;
+    border-radius: 2vw;
+    margin: 4vw;
+}
+
+.parrafoChefs:hover {
+    box-shadow: 0 0 0.5vw black;
+}
+
+.lineaChefValoracion {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 6vw;
+}
+
+.textoValoracion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+}
+
+.imagenesValoracion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+@media (min-width: 576px) {
+
+    /* INICIO */
+    .contenedor {
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "navBrand navBrand"
+            "header header"
+            "source source"
+            "textoChefs textoChefs"
+            "imagenesChefs imagenesChefs"
+            "textoValoracion textoValoracion"
+            "imagenesValoracion imagenesValoracion"
+            "imagenSuscripcion imagenSuscripcion"
+            "footer footer";
+    }
+
+    header {
+    margin-bottom: 12vw;
+    margin-top: 10vw;
+
+    }
+
+    .lineaSourceCarrusel {
+        margin-bottom: 2vw;
+        width: 160%;
+    }
+
+    .source input {
+        text-align: center;
+        margin-top: 3vw;
+    }
+
+    .imagenesChefs {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 209vw;
+        width: 81vw;
+        margin-left: 11vw;
+    }
+
+    .parrafoChefs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 38vw;
+        height: 10vw;
+    }
+
+
+    .imagenesValoracion {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}    
+
+@media (min-width: 768px) {
+
+    /*INICIO*/
+    .contenedor {
+        margin-bottom: 1, 5em;
+        grid-template-columns: 1fr 1f 1fr;
+        grid-template-areas:
+            "navBrand navBrand navBrand"
+            "header header header"
+            "source source source"
+            "textoChefs textoChefs textoChefs"
+            "imagenesChefs imagenesChefs imagenesChefs"
+            "textoValoracion textoValoracion textoValoracion"
+            "imagenesValoracion imagenesValoracion imagenesValoracion"
+            "imagenSuscripcion imagenSuscripcion imagenSuscripcion"
+            "footer footer footer";
+    }
+
+    header {
+        margin-bottom: 6vw;
+        margin-top: 4vw;
+        }
+
+        .primerParrafo {
+            margin-bottom: 5vw;
+        }
+    
+        .lineaSourceCarrusel {
+            margin-left: 10vw;
+            margin-top: 2vw;
+            margin-bottom: -1vw;
+        }
+
+    .navBrand {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 30vw;
+        width: 30vw;
+        margin-left: 17vw;
+    }
+
+    .lineaCarruselChef {
+        margin-left: 10vw;
+        margin-top: 4vw;
+    }
+
+    .textoChefs {
+        margin-top: 4vw;
+    }
+
+
+    .imagenesChefs {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 65vw;
+        width: 89vw;
+        gap: 1vw;
+        margin-left: 7vw;
+    }
+
+    .parrafoChefs {
+        height: 7vw;
+        width: 14vw;
+        margin-top: 6vw;
+    }
+
+    .textoValoracion {
+        margin-top: 5vw;
+    }
+
+
+    .imagenesValoracion {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        box-shadow: 40px 6px 33px 13px rgba(0, 0, 0, 0.1);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    .efectoImagenValoracion:hover {
+        transform: scale(1.1);
+
+    }
+
+}

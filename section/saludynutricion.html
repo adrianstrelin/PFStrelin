@@ -8,63 +8,140 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 
 <body>
     <!-- MENU DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-light orange">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tipsdecocina.html">Tips de Cocina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="saludynutricion.html">Salud y Bienestar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navBrand">
+        <img class="navBrand" src="../img/logogourmet.png" alt="logoLengua" class="navBrand">
+    </div>
+    <header>
+        <!-- TITULO -->
+        <h1>Salud y Bienestar</h1>
+    </header>
     <div class="contenedorSaludNutricion">
-        <nav class="navbar navbar-expand-lg navbar-light orange">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="recetas.html">Recetas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="tipsdecocina.html">Tips de Cocina</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="saludynutricion.html">Salud y Bienestar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contacto.html" tabindex="-1"aria-disabled="true">Contacto</a>
-                        </li>
-                    </ul>
+        <div class="contenedorGrid">
+            <div class="contenedorCards">
+                <div class="card">
+                    <picture>
+                        <source media="(min-widht:1200px)" src="../img/comidaecologica-large.jpg">
+                        <source media="(min-widht:800px)" src="../img/comidaecologica-medium.jpg">
+                        <img src="../img/comidaecologica-small.jpg" alt="Comida Ecológica">
+                    </picture>
+                    <h2>Comida Ecológica</h2>
+                    <p>Hablamos de víveres cultivados o elaborados siguiendo la normativa de la producción bio, lo que
+                        conlleva una serie de garantías para el consumidor, y también para el medio ambiente y los
+                        animales.</p>
+                    <a href="#">Leer más</a>
+                </div>
+
+                <div class="card">
+                    <picture>
+                        <source media="(min-widht:1200px)" src="../img/dietaequilibrada-large.jpg">
+                        <source media="(min-widht:800px)" src="../img/dietaequilibrada-medium.jpg">
+                        <img src="../img/dietaequilibrada-small.jpg" alt="Dieta Equilibrada">
+                    </picture>
+                    <h2>Dieta Equilibrada</h2>
+                    <p>No olvides poner en marcha una dieta en la que incluyas todos los tipos de alimentos que necesita
+                        tu cuerpo para sus funciones básicas.</p>
+                    <a href="#">Leer más</a>
+                </div>
+
+                <div class="card">
+                    <picture>
+                        <source media="(min-widht:1200px)" src="../img/frutaestacion-large.jpg">
+                        <source media="(min-widht:800px)" src="../img/frutaestacion-medium.jpg">
+                        <img src="../img/frutaestacion-small.jpg" alt="Fruta de Estación">
+                    </picture>
+                    <h2>Fruta de Estación</h2>
+                    <p>Cada estación del año es propicia para el consumo de ciertos productos. Es parte del ciclo
+                        natural de la Tierra.</p>
+                    <a href="#">Leer más</a>
+                </div>
+
+                <div class="card">
+                    <picture>
+                        <source media="(min-widht:1200px)" src="../img/incluirverduras-large.jpg">
+                        <source media="(min-widht:800px)" src="../img/incluirverduras-medium.jpg">
+                        <img src="../img/incluirverduras-small.jpg" alt="Incluir Verduras">
+                    </picture>
+                    <h2>Incluir Verduras</h2>
+                    <p>Te compartimos unos sencillos consejos para convertir a las verduras en el ingrediente
+                        fundamental de tus comidas.</p>
+                    <a href="#">Leer más</a>
+                </div>
+
+                <div class="card">
+                    <picture>
+                        <source media="(min-widht:1200px)" src="../img/postrebalanceado-large.jpg">
+                        <source media="(min-widht:800px)" src="../img/postrebalanceado-medium.jpg">
+                        <img src="../img/postrebalanceado-small.jpg" alt="Postres Balanceados">
+                    </picture>
+                    <h2>Postres Balanceados</h2>
+                    <p>Descubre como calmar ese antojo dulce con los postres balanceados.</p>
+                    <a href="#">Leer más</a>
+                </div>
+
+                <div class="card">
+                    <picture>
+                        <source media="(min-widht:1200px)" src="../img/restaurantesustentable-large.jpg">
+                        <source media="(min-widht:800px)" src="../img/restaurantesustentable-medium.jpg">
+                        <img src="../img/restaurantesustentable-small.jpg" alt="Restaurant Sustentable">
+                    </picture>
+                    <h2>Restaurant Sustentable</h2>
+                    <p>Son negocios que basan su labor en principios como el consumo de alimentos de temporada, el
+                        ahorro de energía, la gestión de residuos y la relación con proveedores cercanos</p>
+                    <a href="#">Leer más</a>
                 </div>
             </div>
-        </nav>
-        <header>
-            <!-- TITULO -->
-            <h1>Destacadas del mes</h1>
-        </header>
-        <!-- IMAGEN CABECERA -->
-        <div class="imagenCabecera">
-            <div class="imagenCabecera">
+        </div>
+    </div>
+
+
+        <!-- IMAGEN SUSCRIPCION -->
+        <section class="imagenSuscripcion">
+            <div class="textoSuscripcionUno">
                 <h3>Nuevas imagenes siempre en tu correo</h3>
             </div>
-            <!-- IMAGEN SUSCRIPCION -->
-            <section class="imagenSuscripcion">
-                <div class="textoSuscripcionUno">
-                    <h3>Nuevas imagenes siempre en tu correo</h3>
-                </div>
-                <div class="textoSuscripcionDos">
-                    <h4>Suscríbete para recibir el mejor contenido</h4>
-                </div>
-                <div class="formulario">
-                    <form>
-                        <input id="email" type="email" name="email" placeholder="Ingresa tu e-mail">
-                        <input type="submit" value="Suscríbete" class="botonSuscripcion">
-                    </form>
-                </div>
-            </section>
-            <footer>
-                <div class="tamañoFooter">
+            <div class="textoSuscripcionDos">
+                <h4>Suscríbete para recibir el mejor contenido</h4>
+            </div>
+            <div class="formulario">
+                <form>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ingresa tu e-mail">
+                    <button class="btn btn-dark" type="button">Suscríbete</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="tamañoFooter">
                 <div class="textoRedesUno">
                     <h3>Seguinos en las Redes Sociales</h3>
                 </div>
@@ -95,19 +172,19 @@
                         <a href="./contacto.html">Contacto</a>
                     </div>
                 </div>
-                </div>
-                <div class="textoRedesTres">
-                    <h4>Contactate con Nosotros</h4>
-                </div>
-                <div class="textoContactos">
-                    <h5>info@recetasGourmet.com.ar
-        
-                        +54 0341 4598000
-        
-                        - El Mogote 401 - Cabana - Unquillo.-
-                    </h5>
-                </div>
-            </footer>
+            </div>
+            <div class="textoRedesTres">
+                <h4>Contactate con Nosotros</h4>
+            </div>
+            <div class="textoContactos">
+                <h5>info@recetasGourmet.com.ar
+
+                    +54 0341 4598000
+
+                    - El Mogote 401 - Cabana - Unquillo.-
+                </h5>
+            </div>
+        </footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
@@ -116,4 +193,5 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
             </script>
 </body>
+
 </html>
