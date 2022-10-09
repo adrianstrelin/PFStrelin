@@ -115,7 +115,8 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 454vw;
+    align-content: center;
+    max-height: 512vw;
     width: 62vw;
     margin-left: 20vw;
     gap: 1vw;
@@ -128,7 +129,7 @@ header {
     margin: 5vw 5vw;
     text-decoration: none;
     color: black;
-    max-height: 10vw;
+    max-height: 20vw;
     text-align:center;
     background-color: $colorGeneral;
     border-radius: 2vw;
@@ -198,7 +199,7 @@ header {
     .imagenesChefs {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        height: 209vw;
+        max-height: 244vw;
         width: 81vw;
         margin-left: 11vw;
     }

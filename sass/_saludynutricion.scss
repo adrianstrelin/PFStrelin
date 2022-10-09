@@ -1,9 +1,5 @@
 /* NOMBRE AREAS SALUD Y NUTRICION */
 
-.contenedorGrid {
-    grid-area: contenedorGrid;
-}
-
 .contenedorCards {
     grid-area: contenedorCards;
 }
@@ -12,13 +8,12 @@
     grid-area: card;
 }
 
-/*SALUD Y NUTRICION*/
 
 .contenedorSaludNutricion {
     background-color: white;
     margin-bottom: 1.5em;
-    display: grid;
     justify-items: center;
+    display: grid;
     grid-template-areas:
         "contenedorCards"
         "cardUno"
@@ -29,13 +24,11 @@
         "cardSeis";
 }
 
-
 .contenedorCards {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-
 
 
 .contenedorCards .cardUno,
@@ -46,7 +39,6 @@
 .cardSeis {
     width: 68.75vw;
     min-height: 89.5vw;
-    border-radius: 1, 6vw;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 4.1vw;
@@ -81,6 +73,7 @@
 .cardCinco h2,
 .cardSeis h2 {
     font-weight: 600;
+    margin-top: 2vw;
 }
 
 .contenedorCards .cardUno p,
@@ -123,6 +116,8 @@
 @media (min-width: 576px) {
 
     .contenedorSaludNutricion {
+        background-color: white;
+        margin-bottom: 1.5em;
         grid-template-areas:
             "contenedorCards contenedorCards"
             "cardUno cardUno"
@@ -134,12 +129,54 @@
         ;
     }
 
+    .contenedorCards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+
+    .contenedorCards .cardUno,
+.cardDos,
+.cardTres,
+.cardCuatro,
+.cardCinco,
+.cardSeis {
+    width: 41.75vw;
+    min-height: 76.5vw;
+}
+
+
+.contenedorCards .cardUno picture img,
+.cardDos picture img,
+.cardTres picture img,
+.cardCuatro picture img,
+.cardCinco picture img,
+.cardSeis picture img {
+    width: 100%;
+    height: auto;
+}
+
+
+.lineaSaludNutricion {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+}
+
+@media (min-width: 768px) {
+
+
 
     .contenedorCards {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        align-items: center;
+        align-items: start;
     }
 
     .contenedorCards .cardUno,
@@ -148,67 +185,26 @@
     .cardCuatro,
     .cardCinco,
     .cardSeis {
-        width: 68.75vw;
-        min-height: 89.5vw;
-        border-radius: 1, 6vw;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        margin: 4.1vw;
-        text-align: center;
-        transition: all 0.25s;
+        width: 24.75vw;
+        min-height: 34.5vw;
     }
-
-    .cardUno,
-    .cardDos,
-    .cardTres,
-    .cardCuatro,
-    .cardCinco,
-    .cardSeis {
-        object-fit: cover;
+    
+    .contenedorCards .cardUno h2,
+    .cardDos h2,
+    .cardTres h2,
+    .cardCuatro h2,
+    .cardCinco h2,
+    .cardSeis h2 {
+        font-size: 2.5vw;
     }
-
-    .contenedorCards .cardUno:hover,
-    .cardDos:hover,
-    .cardTres:hover,
-    .cardCuatro:hover,
-    .cardCinco:hover,
-    .cardSeis:hover {
-        transform: translateY(-3.1vw);
-        box-shadow: 0 2.5vw 3, 3vw rgba(0, 0, 0, 0.2);
+    
+    .contenedorCards .cardUno p,
+    .cardDos p,
+    .cardTres p,
+    .cardCuatro p,
+    .cardCinco p,
+    .cardSeis p {
+        font-size: 1.8vw;
     }
-
-    .contenedorCards .cardUno picture img,
-    .cardDos picture img,
-    .cardTres picture img,
-    .cardCuatro picture img,
-    .cardCinco picture img,
-    .cardSeis picture img {
-        width: 68vw;
-        height: 45.8vw;
-    }
-
-
-}
-
-@media (min-width: 768px) {
-
-    .contenedorSaludNutricion {
-        grid-template-areas:
-            "contenedorCards contenedorCards contenedorCards"
-            "card card card";
-    }
-
-
-    .contenedorCards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-    }
-
-
-
-
-
 
 }
