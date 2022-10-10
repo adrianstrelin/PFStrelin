@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -80,10 +81,12 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  background-image: url(../img/imagensuscripciondos.jpg);
+  background-image: url(../img/fondosuscripcion-large.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   height: 50vw;
   width: auto;
-  background-size: 100vw;
+  background-size: cover;
   color: wheat;
 }
 
@@ -92,37 +95,25 @@ footer {
   flex-direction: row;
   justify-content: center;
   font-size: 5vw;
-  margin-top: 5vw;
+  margin-top: 14vw;
 }
 
 .textoSuscripcionDos h4 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   font-size: 3vw;
-  margin-bottom: 4vw;
+  margin-top: -21vw;
 }
 
 .formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 23vw;
+  margin-top: -14vw;
+  margin-bottom: 14vw;
 }
 
-input {
-  border-radius: 2vw;
-  position: flex;
-  flex-direction: row;
-  width: 50vw;
-  height: 5.5vw;
-  text-align: center;
-}
-
-.botonSuscripcion {
-  width: 18vw;
-  height: 6vw;
+.btn-sm {
   background-color: wheat;
+  color: black;
 }
 
 .footer {
@@ -183,16 +174,11 @@ input {
 
 @media (min-width: 576px) {
   .textoSuscripcionUno h3 {
-    margin-right: 5vw;
-    font-size: 5vw;
+    text-align: center;
   }
   .textoSuscripcionDos h4 {
-    margin-bottom: 1vw;
-    margin-right: 36vw;
-  }
-  .botonSuscripcion {
-    margin-right: 18vw;
-    margin-top: 2vw;
+    text-align: center;
+    margin-top: -22vw;
   }
   .footerMenu {
     justify-content: space-evenly;
@@ -219,12 +205,16 @@ input {
   .textoSuscripcionUno h3 {
     margin-right: 23vw;
     font-size: 4vw;
+    margin-top: 10vw;
   }
   .textoSuscripcionDos h4 {
     font-size: 3vw;
-    margin-bottom: 2vw;
+    margin-bottom: 18.5vw;
     margin-right: 36vw;
     margin-top: 2vw;
+  }
+  .formulario {
+    margin-left: -32vw;
   }
   input {
     text-align: center;
@@ -337,7 +327,6 @@ footer {
 
 /* INICIO */
 .contenedor {
-  background-color: white;
   margin-bottom: 1.5em;
   display: grid;
   grid-template-areas: "navBrand" "header" "source" "textoChefs" "imagenesChefs" "textoValoracion" "imagenesValoracion" "imagenSuscripcion" "footer";
@@ -347,21 +336,59 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin-bottom: 15vw;
+  margin-bottom: 12vw;
   margin-top: 13vw;
 }
 
+.carousel-inner .carousel-item > img {
+  height: 60vw;
+}
+
+.container-fluid {
+  width: 90%;
+}
+
 .source {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  padding: 2vw;
+  max-height: 8vw;
+  border-radius: 10vw;
+  border-style: solid black;
+  background: wheat;
+  margin: 8vw 0 -4vw 42vw;
+  min-width: 50vw;
+}
+
+.sourceReceta {
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+  font-size: 3vw;
+  line-height: 5vw;
+  transition: 0.3s;
+  width: 0;
+}
+
+.botonSource {
+  max-width: 3vw;
+  height: 6vw;
+  text-decoration: none;
+  color: white;
+  font-size: 4vw;
+}
+
+.source:hover > .sourceReceta {
+  min-width: 118px;
 }
 
 .lineaSourceCarrusel {
   height: 5vw;
   width: 76%;
-  margin-left: 10vw;
+  margin-left: 12vw;
   margin-top: 3vw;
   margin-bottom: -3.5vw;
 }
@@ -382,7 +409,7 @@ header {
   height: 5vw;
   width: 80%;
   margin-left: 10vw;
-  margin-top: 7vw;
+  margin-top: 6vw;
 }
 
 .textoChefs {
@@ -459,9 +486,31 @@ header {
     margin-bottom: 2vw;
     width: 160%;
   }
-  .source input {
-    text-align: center;
-    margin-top: 3vw;
+  .carousel-inner .carousel-item > img {
+    height: 50vw;
+  }
+  .source {
+    padding: 4vw;
+    max-height: 7vw;
+    background: wheat;
+    margin: 7vw 0 -4vw 43vw;
+    width: 45vw;
+  }
+  .sourceReceta {
+    font-size: 2.5vw;
+    line-height: 5vw;
+    transition: 0.3s;
+    width: 0;
+  }
+  .source:hover > .sourceReceta {
+    width: 133px;
+  }
+  .lineaSourceCarrusel {
+    width: 160%;
+    margin-left: 10vw;
+  }
+  .lineaCarruselChef {
+    margin-top: 5vw;
   }
   .imagenesChefs {
     grid-template-columns: 1fr 1fr;
@@ -496,9 +545,50 @@ header {
   .primerParrafo {
     margin-bottom: 5vw;
   }
+  .carousel-inner .carousel-item > img {
+    height: 35vw;
+  }
+  .container-fluid {
+    width: 95%;
+  }
+  .source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 2vw;
+    max-height: 7vw;
+    border-radius: 10vw;
+    border-style: solid black;
+    background: wheat;
+    margin: 18vw 0 -4vw 23vw;
+    min-width: 37vw;
+  }
+  .sourceReceta {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 2vw;
+    line-height: 5vw;
+    transition: 0.3s;
+    width: 0;
+  }
+  .botonSource {
+    max-width: 3vw;
+    height: 4vw;
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+  }
+  .source:hover > .sourceReceta {
+    width: 130px;
+  }
   .lineaSourceCarrusel {
+    height: 5vw;
+    width: 160%;
     margin-left: 10vw;
-    margin-top: 2vw;
+    margin-top: 3vw;
     margin-bottom: -1vw;
   }
   .navBrand {
@@ -541,6 +631,55 @@ header {
   }
   .efectoImagenValoracion:hover {
     transform: scale(1.1);
+  }
+}
+@media (min-width: 992px) {
+  .carousel-inner .carousel-item > img {
+    height: 35vw;
+  }
+  .container-fluid {
+    width: 62%;
+    margin-left: 34vw;
+  }
+  .source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 2vw;
+    max-height: 5vw;
+    border-radius: 10vw;
+    border-style: solid black;
+    background: wheat;
+    margin: 18vw 0 -4vw -12.5vw;
+    width: 37vw;
+  }
+  .sourceReceta {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 2vw;
+    line-height: 5vw;
+    transition: 0.3s;
+    width: 0;
+  }
+  .botonSource {
+    max-width: 3vw;
+    height: 4vw;
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+  }
+  .source:hover > .sourceReceta {
+    width: 156px;
+  }
+  .lineaSourceCarrusel {
+    height: 5vw;
+    width: 160%;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    margin-bottom: -1vw;
   }
 }
 /* NOMBRE AREAS RECETAS */
@@ -904,7 +1043,7 @@ video {
     margin-top: 3vw;
   }
 }
-.btn-dark {
+.btn-dark-md {
   background-color: wheat;
   color: black;
   margin: 4vw 0 4vw 0;

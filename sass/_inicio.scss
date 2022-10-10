@@ -44,7 +44,6 @@ footer {
 /* INICIO */
 
 .contenedor {
-    background-color: white;
     margin-bottom: 1.5em;
     display: grid;
     grid-template-areas:
@@ -64,21 +63,61 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    margin-bottom: 15vw;
+    margin-bottom: 12vw;
     margin-top: 13vw;
 }
 
-.source {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 5vw;
+
+.carousel-inner  .carousel-item > img {
+    height: 60vw;
 }
+
+.container-fluid {
+    width: 90%;
+}
+
+.source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 2vw;
+    max-height: 8vw;
+    border-radius: 10vw;
+    border-style: solid black;
+    background: $colorGeneral;
+    margin: 8vw 0 -4vw 42vw;
+    min-width: 50vw;
+}
+
+.sourceReceta {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 3vw;
+    line-height: 5vw;
+    transition: .3s;
+    width: 0;
+}
+
+.botonSource {
+    max-width: 3vw;
+    height: 6vw;
+    text-decoration: none;
+    color: white;
+    font-size: 4vw;
+}
+
+.source:hover > .sourceReceta {
+    min-width: 118px;
+}
+
 
 .lineaSourceCarrusel {
     height: 5vw;
     width: 76%;
-    margin-left: 10vw;
+    margin-left: 12vw;
     margin-top: 3vw;
     margin-bottom: -3.5vw;
 }
@@ -98,7 +137,7 @@ header {
     height: 5vw;
     width: 80%;
     margin-left: 10vw;
-    margin-top: 7vw;
+    margin-top: 6vw;
 }
 
 
@@ -191,9 +230,38 @@ header {
         width: 160%;
     }
 
-    .source input {
-        text-align: center;
-        margin-top: 3vw;
+    .carousel-inner  .carousel-item > img {
+        height: 50vw;
+    }
+    
+    .source {
+        padding: 4vw;
+        max-height: 7vw;
+        background: $colorGeneral;
+        margin: 7vw 0 -4vw 43vw;
+        width: 45vw;
+    }
+    
+    .sourceReceta {
+        font-size: 2.5vw;
+        line-height: 5vw;
+        transition: .3s;
+        width: 0;
+    }
+    
+    
+    .source:hover > .sourceReceta {
+        width: 133px;
+    }
+
+    
+    .lineaSourceCarrusel {
+        width: 160%;
+        margin-left: 10vw;
+    }
+
+    .lineaCarruselChef {
+        margin-top: 5vw;
     }
 
     .imagenesChefs {
@@ -246,9 +314,58 @@ header {
             margin-bottom: 5vw;
         }
     
+
+        .carousel-inner  .carousel-item > img {
+            height: 35vw;
+        }
+
+        .container-fluid {
+            width: 95%;
+        }
+
+        .source {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50%, -50%);
+            padding: 2vw;
+            max-height: 7vw;
+            border-radius: 10vw;
+            border-style: solid black;
+            background: $colorGeneral;
+            margin: 18vw 0 -4vw 23vw;
+            min-width: 37vw;
+        }
+        
+        .sourceReceta {
+            border: none;
+            background: none;
+            outline: none;
+            color: black;
+            font-size: 2vw;
+            line-height: 5vw;
+            transition: .3s;
+            width: 0;
+        }
+        
+        .botonSource {
+            max-width: 3vw;
+            height: 4vw;
+            text-decoration: none;
+            color: white;
+            font-size: 3vw;
+        }
+        
+        .source:hover > .sourceReceta {
+            width: 130px;
+        }
+        
+        
         .lineaSourceCarrusel {
+            height: 5vw;
+            width: 160%;
             margin-left: 10vw;
-            margin-top: 2vw;
+            margin-top: 3vw;
             margin-bottom: -1vw;
         }
 
@@ -305,3 +422,61 @@ header {
     }
 
 }
+
+@media (min-width: 992px) {
+
+    .carousel-inner  .carousel-item > img {
+        height: 35vw;
+    }
+
+    .container-fluid {
+        width: 62%;
+        margin-left: 34vw;
+    }
+
+    .source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        padding: 2vw;
+        max-height: 5vw;
+        border-radius: 10vw;
+        border-style: solid black;
+        background: $colorGeneral;
+        margin: 18vw 0 -4vw -12.5vw;
+        width: 37vw;
+    }
+    
+    .sourceReceta {
+        border: none;
+        background: none;
+        outline: none;
+        color: black;
+        font-size: 2vw;
+        line-height: 5vw;
+        transition: .3s;
+        width: 0;
+    }
+    
+    .botonSource {
+        max-width: 3vw;
+        height: 4vw;
+        text-decoration: none;
+        color: white;
+        font-size: 3vw;
+    }
+    
+    .source:hover > .sourceReceta {
+        width: 156px;
+    }
+    
+    
+    .lineaSourceCarrusel {
+        height: 5vw;
+        width: 160%;
+        margin-left: 10vw;
+        margin-top: 3vw;
+        margin-bottom: -1vw;
+    }
+    }

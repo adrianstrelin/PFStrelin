@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -80,10 +81,12 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background-image: $fondoSuscripcion;
+    background-image: url(../img/fondosuscripcion-large.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     height: 50vw;
     width: auto;
-    background-size: 100vw;
+    background-size: cover;
     color:$colorGeneral;
 }
 
@@ -92,39 +95,29 @@ footer {
     flex-direction: row;
     justify-content: center;
     font-size: 5vw;
-    margin-top: 5vw;
+    margin-top: 14vw;
 }
 
 .textoSuscripcionDos h4 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     font-size: 3vw;
-    margin-bottom: 4vw;
+    margin-top: -21vw;
 }
+
 
 .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 23vw;
+    margin-top: -14vw;
+    margin-bottom: 14vw;
 }
 
-input {
-    border-radius: 2vw;
-    position: flex;
-    flex-direction: row;
-    width: 50vw;
-    height: 5.5vw;
-    text-align: center;
-}
 
-.botonSuscripcion {
-    width: 18vw;
-    height: 6vw;
+.btn-sm {
     background-color: $colorGeneral;
-
+    color: black;
 }
+
 
 .footer {
     display: grid;
@@ -187,19 +180,12 @@ input {
 
 
     .textoSuscripcionUno h3 {
-        margin-right: 5vw;
-        font-size: 5vw;
+        text-align: center;
     }
 
     .textoSuscripcionDos h4 {
-        margin-bottom: 1vw;
-        margin-right: 36vw;
-    }
-
-    
-    .botonSuscripcion {
-        margin-right: 18vw;
-        margin-top: 2vw;
+    text-align: center;
+    margin-top: -22vw;
     }
 
 
@@ -234,13 +220,18 @@ input {
     .textoSuscripcionUno h3 {
         margin-right: 23vw;
         font-size: 4vw;
+        margin-top: 10vw;
     }
 
     .textoSuscripcionDos h4 {
         font-size: 3vw;
-        margin-bottom: 2vw;
+        margin-bottom: 18.5vw;
         margin-right: 36vw;
         margin-top: 2vw;
+    }
+
+    .formulario {
+        margin-left: -32vw;
     }
 
     input {
