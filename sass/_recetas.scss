@@ -53,9 +53,7 @@
 }
 
 .muchasRecetas {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    @include elementos-grid;
     align-items: center;
     margin-bottom: 12vw;
 }
@@ -68,9 +66,7 @@
 
 
 .imagenesRecetas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    @include elementos-grid;
     align-items: center;
     margin: 3vw;
 }
@@ -80,9 +76,7 @@
 }
 
 .enlaceRecetas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    @include elementos-grid;
     margin: 5vw 5vw;
     font-weight: 400;
     text-decoration: none;
@@ -104,8 +98,7 @@
 @media (min-width: 576px) {
     
     .tituloRecetas {
-        display: flex;
-        flex-direction: row;
+        @include elementos-flex-row;
         justify-content: center;
         margin-left: 0vw;
         margin-top: -9vw;
@@ -134,9 +127,7 @@
     }
     
     .sectionRecetas {
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
+        @include elementos-grid;
         align-items: center;
         margin-top: 10vw;
         margin-bottom: 5vw;
@@ -162,15 +153,13 @@
     }
 
     .muchasRecetasUno {
-        display: flex;
-        flex-direction: column;
+        @include elementos-flex-row;
         align-items: flex-start;
         margin-left: 7vw;
     }
     
     .muchasRecetasDos {
-        display: flex;
-        flex-direction: column;
+        @include elementos-flex-row;
         align-items: flex-end;
         margin-right: 7vw;
     }

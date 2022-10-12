@@ -51,30 +51,34 @@ ul {
 
 a {
   text-decoration: none;
-  color: wheat;
+  color: black;
 }
 
+/*
 a:link {
-  color: black;
+    color: black;
 }
 
 a:hover {
-  color: orange;
+    color: orange;
 }
 
 a:visited {
-  color: grey;
+    color: grey;
 }
 
 a:active {
-  color: black;
+    color: black;
 }
-
+*/
 footer {
   padding: 3em 3em 0em 3em;
   background-color: wheat;
   margin-bottom: 0;
   margin-top: 1.5em;
+}
+footer a:hover {
+  color: orange;
 }
 
 .imagenSuscripcion {
@@ -361,6 +365,10 @@ header {
   margin: 8vw 0 -4vw 42vw;
   min-width: 50vw;
 }
+.source a {
+  text-decoration: none;
+  color: orange;
+}
 
 .sourceReceta {
   border: none;
@@ -445,6 +453,9 @@ header {
   margin: 4vw;
   font-weight: 400;
 }
+.parrafoChefs a:hover {
+  color: orange;
+}
 
 .parrafoChefs:hover {
   box-shadow: 0 0 0.5vw black;
@@ -481,6 +492,9 @@ header {
   header {
     margin-bottom: 12vw;
     margin-top: 10vw;
+  }
+  .container, .container-sm {
+    max-width: 696px;
   }
   .lineaSourceCarrusel {
     margin-bottom: 2vw;
@@ -542,6 +556,9 @@ header {
     margin-bottom: 6vw;
     margin-top: 4vw;
   }
+  .container, .container-sm {
+    max-width: 992px;
+  }
   .primerParrafo {
     margin-bottom: 5vw;
   }
@@ -557,11 +574,11 @@ header {
     align-items: center;
     transform: translate(-50%, -50%);
     padding: 2vw;
-    max-height: 7vw;
+    max-height: 6vw;
     border-radius: 10vw;
     border-style: solid black;
     background: wheat;
-    margin: 18vw 0 -4vw 23vw;
+    margin: 18vw 0 -4vw 22vw;
     min-width: 37vw;
   }
   .sourceReceta {
@@ -590,14 +607,6 @@ header {
     margin-left: 10vw;
     margin-top: 3vw;
     margin-bottom: -1vw;
-  }
-  .navBrand {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 30vw;
-    width: 30vw;
-    margin-left: 17vw;
   }
   .lineaCarruselChef {
     margin-left: 10vw;
@@ -638,8 +647,11 @@ header {
     height: 35vw;
   }
   .container-fluid {
-    width: 62%;
+    width: 65%;
     margin-left: 34vw;
+  }
+  .container, .container-sm {
+    max-width: 1500px;
   }
   .source {
     display: flex;
@@ -651,8 +663,8 @@ header {
     border-radius: 10vw;
     border-style: solid black;
     background: wheat;
-    margin: 18vw 0 -4vw -12.5vw;
-    width: 37vw;
+    margin: 18vw 0 -4vw -14.5vw;
+    width: 11vw;
   }
   .sourceReceta {
     border: none;
@@ -672,7 +684,7 @@ header {
     font-size: 3vw;
   }
   .source:hover > .sourceReceta {
-    width: 156px;
+    width: 208px;
   }
   .lineaSourceCarrusel {
     height: 5vw;
@@ -731,8 +743,8 @@ header {
 
 .muchasRecetas {
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
   margin-bottom: 12vw;
 }
@@ -803,8 +815,8 @@ header {
   }
   .sectionRecetas {
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
     margin-top: 10vw;
     margin-bottom: 5vw;
@@ -828,13 +840,13 @@ header {
   }
   .muchasRecetasUno {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     margin-left: 7vw;
   }
   .muchasRecetasDos {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     margin-right: 7vw;
   }
@@ -936,7 +948,6 @@ video {
 .contenedorEstrellas {
   margin-bottom: 2vw;
 }
-
 .contenedorEstrellas p {
   margin-bottom: 0vw;
 }

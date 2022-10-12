@@ -22,9 +22,7 @@ header {
 
 
 .navBrand {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    @include elementos-grid;
     height: 40vw;
     width: 40vw;
     margin-left: 15vw;
@@ -50,9 +48,9 @@ ul {
 
 a {
     text-decoration: none;
-    color: $colorGeneral;
+    color: black;
 }
-
+/*
 a:link {
     color: black;
 }
@@ -68,19 +66,21 @@ a:visited {
 a:active {
     color: black;
 }
+*/
 
 footer {
     padding: 3em 3em 0em 3em;
     background-color: $colorGeneral;
     margin-bottom: 0;
     margin-top: 1.5em;
+    a:hover {
+        color: orange;
+    }
 }
 
 
 .imagenSuscripcion {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    @include elementos-grid;
     background-image: url(../img/fondosuscripcion-large.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -120,9 +120,7 @@ footer {
 
 
 .footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    @include elementos-grid;
     margin-bottom: 0;
     width: auto;
     height: 150vw;
@@ -135,8 +133,7 @@ footer {
 
 
 .footerMenu {
-    display: flex;
-    flex-direction: row;
+    @include elementos-flex-row;
     align-items: center;
     gap: 3vw;
     margin: 8vw 0 5vw 0;
@@ -145,8 +142,7 @@ footer {
 }
 
 .redes {
-    display: flex;
-    flex-direction: row;
+    @include elementos-flex-row;
     justify-content: center;
     height: auto;
     width: auto;
@@ -154,15 +150,13 @@ footer {
 }
 
 .textoRedesUno {
-    display: flex;
-    flex-direction: row;
+    @include elementos-flex-row;
     justify-content: center;
     margin-bottom: 5vw;
 }
 
 .textoRedesDos {
-    display: flex;
-    flex-direction: row;
+    @include elementos-flex-row;
     justify-content: center;
     margin-bottom: -4vw;
 }
@@ -249,9 +243,7 @@ footer {
     }
 
     .footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        @include elementos-grid;
         margin-bottom: 0;
         width: auto;
     }
@@ -270,8 +262,7 @@ footer {
     }
 
     .redes {
-        display: flex;
-        flex-direction: row;
+        @include elementos-flex-row;
         align-items: center;
         width: 35vw;
         margin-left: 50vw;
@@ -286,8 +277,7 @@ footer {
 
 
     .textoRedesUno {
-        display: flex;
-        flex-direction: row;
+        @include elementos-flex-row;
         justify-content: flex-start;
         margin-bottom: -12.5vw;
         margin-top: 1vw;
@@ -298,8 +288,7 @@ footer {
     }
 
     .textoRedesDos {
-        display: flex;
-        flex-direction: row;
+        @include elementos-flex-row;
         justify-content: flex-start;
     }
 

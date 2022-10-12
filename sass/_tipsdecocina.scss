@@ -47,15 +47,11 @@ video {
 }
 
 .contenedorVideos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    @include elementos-grid;
 }
 
 .videosTipsCocina {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    @include elementos-grid;
 }
 
 
@@ -70,10 +66,11 @@ video {
 
 .contenedorEstrellas {
     margin-bottom: 2vw;
+    p {
+        margin-bottom: 0vw;
+    }
 }
-.contenedorEstrellas p {
-    margin-bottom: 0vw;
-}
+
 
 
 .lineaTipsCocinaVideosUno {
@@ -116,9 +113,6 @@ video {
     .cabeceraVideos p {
         font-size: 2.5vw;
     }
-
-
-
 
 }
 

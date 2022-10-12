@@ -1,0 +1,15 @@
+@mixin elementos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+@mixin elementos-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin elementos-flex-column {
+    display: flex;
+    flex-direction: column;
+}
