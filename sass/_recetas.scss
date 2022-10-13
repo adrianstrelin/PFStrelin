@@ -153,15 +153,21 @@
     }
 
     .muchasRecetasUno {
-        @include elementos-flex-row;
+        @include elementos-flex-column;
         align-items: flex-start;
         margin-left: 7vw;
+        a:hover {
+            color: orange;
+        }
     }
     
     .muchasRecetasDos {
-        @include elementos-flex-row;
+        @include elementos-flex-column;
         align-items: flex-end;
         margin-right: 7vw;
+        a:hover {
+            color: orange;
+        }
     }
 }
 
@@ -204,6 +210,9 @@
         align-items: center;
         border-radius: 1vw;
         width: auto;
+        a:hover {
+            color: orange;
+        }
     }
 
     .enlaceRecetas:hover {

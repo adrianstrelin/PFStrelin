@@ -345,7 +345,7 @@ header {
 }
 
 .carousel-inner .carousel-item > img {
-  height: 60vw;
+  height: 53vw;
 }
 
 .container-fluid {
@@ -363,7 +363,7 @@ header {
   border-style: solid black;
   background: wheat;
   margin: 8vw 0 -4vw 42vw;
-  min-width: 50vw;
+  width: 45vw;
 }
 .source a {
   text-decoration: none;
@@ -458,7 +458,7 @@ header {
 }
 
 .parrafoChefs:hover {
-  box-shadow: 0 0 0.5vw black;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .lineaChefValoracion {
@@ -578,8 +578,8 @@ header {
     border-radius: 10vw;
     border-style: solid black;
     background: wheat;
-    margin: 18vw 0 -4vw 22vw;
-    min-width: 37vw;
+    margin: 17vw 0 -4vw 18vw;
+    width: 34vw;
   }
   .sourceReceta {
     border: none;
@@ -663,8 +663,8 @@ header {
     border-radius: 10vw;
     border-style: solid black;
     background: wheat;
-    margin: 18vw 0 -4vw -14.5vw;
-    width: 11vw;
+    margin: 18vw 0 -4vw -15vw;
+    width: 33vw;
   }
   .sourceReceta {
     border: none;
@@ -840,15 +840,21 @@ header {
   }
   .muchasRecetasUno {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     margin-left: 7vw;
   }
+  .muchasRecetasUno a:hover {
+    color: orange;
+  }
   .muchasRecetasDos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
     margin-right: 7vw;
+  }
+  .muchasRecetasDos a:hover {
+    color: orange;
   }
 }
 @media (min-width: 768px) {
@@ -881,6 +887,9 @@ header {
     align-items: center;
     border-radius: 1vw;
     width: auto;
+  }
+  .enlaceRecetas a:hover {
+    color: orange;
   }
   .enlaceRecetas:hover {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -1242,6 +1251,14 @@ video {
 .cardSeis {
     width: 24.75vw;
     min-height: 34.5vw;
+  }
+  .contenedorCards .cardUno a:hover,
+.cardDos a:hover,
+.cardTres a:hover,
+.cardCuatro a:hover,
+.cardCinco a:hover,
+.cardSeis a:hover {
+    color: orange;
   }
   .contenedorCards .cardUno h2,
 .cardDos h2,

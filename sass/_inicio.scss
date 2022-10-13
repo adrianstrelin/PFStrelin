@@ -67,7 +67,7 @@ header {
 
 
 .carousel-inner  .carousel-item > img {
-    height: 60vw;
+    height: 53vw;
 }
 
 .container-fluid {
@@ -85,7 +85,7 @@ header {
     border-style: solid black;
     background: $colorGeneral;
     margin: 8vw 0 -4vw 42vw;
-    min-width: 50vw;
+    width: 45vw;
     a {
         text-decoration: none;
         color: orange;
@@ -176,7 +176,7 @@ header {
 }
 
 .parrafoChefs:hover {
-    box-shadow: 0 0 0.5vw black;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .lineaChefValoracion {
@@ -335,8 +335,8 @@ header {
             border-radius: 10vw;
             border-style: solid black;
             background: $colorGeneral;
-            margin: 18vw 0 -4vw 22vw;
-            min-width: 37vw;
+            margin: 17vw 0 -4vw 18vw;
+            width: 34vw;
         }
         
         .sourceReceta {
@@ -443,8 +443,8 @@ header {
         border-radius: 10vw;
         border-style: solid black;
         background: $colorGeneral;
-        margin: 18vw 0 -4vw -14.5vw;
-        width: 11vw;
+        margin: 18vw 0 -4vw -15vw;
+        width: 33vw;
     }
     
     .sourceReceta {

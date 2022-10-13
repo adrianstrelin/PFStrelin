@@ -185,6 +185,9 @@
     .cardSeis {
         width: 24.75vw;
         min-height: 34.5vw;
+        a:hover {
+            color: orange;
+        }
     }
     
     .contenedorCards .cardUno h2,
