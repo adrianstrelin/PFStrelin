@@ -8,7 +8,9 @@ body {
     text-align: center;
     font-weight: bolder;
     letter-spacing: 0,03em;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 header {
     font-size: large;
@@ -21,25 +23,40 @@ header {
 }
 
 
-.navBrand {
-    @include elementos-grid;
-    height: 40vw;
-    width: 40vw;
-    margin-left: 15vw;
-}
-
 img {
     width: 100%;
     height: 100%;
 }
 
 .orange {
-    background-color: $colorGeneral;
+    background-image: url(../img/fondonavbar-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.colorNav {
-    color: $colorGeneral;
+.navbar-light .navbar-brand {
+    color: wheat;
 }
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../img/menuhamburguesa-nav.png);
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: wheat;
+}
+
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    margin-top: -0.2vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:1rem ;
+    padding-right:1.5rem ;
+}
+
 
 ul {
     list-style-type: none;
@@ -50,44 +67,29 @@ a {
     text-decoration: none;
     color: black;
 }
-/*
-a:link {
-    color: black;
-}
 
-a:hover {
-    color: orange;
-}
-
-a:visited {
-    color: grey;
-}
-
-a:active {
-    color: black;
-}
-*/
 
 footer {
     padding: 3em 3em 0em 3em;
-    background-color: $colorGeneral;
+    background-color: wheat;
     margin-bottom: 0;
     margin-top: 1.5em;
     a:hover {
-        color: orange;
+        color: #FF7F50;
     }
 }
 
 
 .imagenSuscripcion {
     @include elementos-grid;
-    background-image: url(../img/fondosuscripcion-large.jpg);
+    background-image: url(../img/fondosuscripcion-large.webp);
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vw;
+    height: 53vw;
     width: auto;
     background-size: cover;
-    color:$colorGeneral;
+    color:wheat;
+    margin-bottom: -7vw;
 }
 
 .textoSuscripcionUno h3 {
@@ -114,7 +116,7 @@ footer {
 
 
 .btn-sm {
-    background-color: $colorGeneral;
+    background-color: wheat;
     color: black;
 }
 
@@ -172,6 +174,15 @@ footer {
 
 @media (min-width: 576px) {
 
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        padding-right:2.5rem ;
+    }
+
+    .container,
+    .container-sm {
+        max-width: 770px;
+    }
+
 
     .textoSuscripcionUno h3 {
         text-align: center;
@@ -206,6 +217,54 @@ footer {
 
 
 @media (min-width: 768px) {
+
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        padding-right:0.5rem ;
+    }
+
+    .navbar-nav .nav-item {
+        position: relative;
+    }
+    
+    .navbar-nav .nav-item a::before {
+        content: "";
+        height: 2px;
+        width: 0%;
+        background:wheat;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        transition: 0.4s ease-out;
+    }
+    
+    .navbar-nav .nav-item:hover a::before {
+        width: 100%;
+        }
+
+    .navbar-expand-md .navbar-collapse {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    .container, .container-sm {
+        max-width: 2618px;
+    }
+
+    .orange {
+        height: 7vw;
+        width: 100vw;
+    }
+    
+    .navbar-brand {
+        height: 6vw;
+    }
+
+    .nav-item {
+        font-size: 1.8vw;
+    }
+
 
     .imagenSuscripcion {
         height: 40vw;
@@ -306,3 +365,16 @@ footer {
         font-size: 2vw;
     }
     }
+
+    @media (min-width: 992px) {
+        
+        .btn-sm {
+            height: 3vw;
+
+        }
+    
+    
+    
+    }
+
+    

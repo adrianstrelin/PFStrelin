@@ -50,8 +50,8 @@
 .cardCuatro:hover,
 .cardCinco:hover,
 .cardSeis:hover {
-    transform: translateY(-3.1vw);
-    box-shadow: 0 2.5vw 3, 3vw rgba(0, 0, 0, 0.2);
+    transform: translateY(-1.4vw);
+    box-shadow: 0 2.5vw 3, 3vw rgba(0, 0, 0, 0.4);
 }
 
 .contenedorCards .cardUno picture img,
@@ -95,7 +95,7 @@
     text-decoration: none;
 }
 
-.lineaSaludNutricion {
+.lineaSaludNutricionUno {
     height: 5vw;
     width: 80%;
     margin-left: 10vw;
@@ -103,7 +103,7 @@
     margin-bottom: 3vw;
 }
 
-.lineaSaludNutricionDos {
+.lineaSaludNutricionSiete {
     height: 5vw;
     width: 80%;
     margin-left: 10vw;
@@ -156,13 +156,40 @@
 }
 
 
-.lineaSaludNutricion {
+.lineaSaludNutricionUno {
     height: 5vw;
     width: 80%;
     margin-left: 10vw;
     margin-top: 3vw;
     margin-bottom: 3vw;
 }
+
+
+.lineaSaludNutricionSiete {
+    height: 5vw;
+    width: 80%;
+    margin-left: 10vw;
+    margin-top: -1vw;
+    margin-bottom: 7vw;
+}
+
+.contenedorCards .cardUno h2,
+    .cardDos h2,
+    .cardTres h2,
+    .cardCuatro h2,
+    .cardCinco h2,
+    .cardSeis h2 {
+        font-size: 3.4vw;
+    }
+    
+    .contenedorCards .cardUno p,
+    .cardDos p,
+    .cardTres p,
+    .cardCuatro p,
+    .cardCinco p,
+    .cardSeis p {
+        font-size: 2.7vw;
+    }
 
 }
 
@@ -188,6 +215,7 @@
         a:hover {
             color: orange;
         }
+        padding: -2vw;
     }
     
     .contenedorCards .cardUno h2,
@@ -207,5 +235,38 @@
     .cardSeis p {
         font-size: 1.8vw;
     }
+
+}
+
+@media (min-width: 992px) {
+    
+    .contenedorCards .cardUno h2,
+    .cardDos h2,
+    .cardTres h2,
+    .cardCuatro h2,
+    .cardCinco h2,
+    .cardSeis h2 {
+        font-size: 1.7vw;
+    }
+    
+    .contenedorCards .cardUno p,
+    .cardDos p,
+    .cardTres p,
+    .cardCuatro p,
+    .cardCinco p,
+    .cardSeis p {
+        font-size: 1.1vw;
+    }
+
+    .contenedorCards .cardUno,
+    .cardDos,
+    .cardTres,
+    .cardCuatro,
+    .cardCinco,
+    .cardSeis {
+        width: 20vw;
+        min-height: 30.5vw;
+    }
+
 
 }

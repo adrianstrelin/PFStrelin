@@ -36,6 +36,10 @@ video {
 
 .contenedorTipsCocina {
     background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 1.5em;
     display: grid;
     grid-template-areas:
@@ -60,12 +64,13 @@ video {
 }
 
 .cabeceraVideos p {
-    font-size:3vw;
+    font-size: 3vw;
     font-weight: 400;
 }
 
 .contenedorEstrellas {
     margin-bottom: 2vw;
+
     p {
         margin-bottom: 0vw;
     }
@@ -87,6 +92,7 @@ video {
     margin-top: 4vw;
     margin-bottom: 4vw;
 }
+
 .lineaTipsCocinaVideosTres {
     height: 5vw;
     width: 80%;
@@ -117,9 +123,13 @@ video {
 }
 
 @media (min-width: 768px) {
-    
+
     .contenedorTipsCocina {
         background-color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-right: auto;
+        margin-left: auto;
         margin-bottom: 1.5em;
         display: grid;
         grid-template-areas:
@@ -130,15 +140,29 @@ video {
             "contenedorVideos contenedorVideos";
     }
 
-    
+
     .videosTipsCocina {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         align-items: center;
     }
 
-    .cabeceraVideos p {
-        font-size: 1.5vw;
+    .ratio>* {
+        width: 90%;
+    }
+
+    .cabeceraVideos {
+        p {
+            font-size: 1.7vw;
+            margin-left: auto;
+            padding: 0 4vw 0 4vw;
+            margin-top: 3vw;
+        }
+        h2 {
+            font-size: 3vw;
+            margin-top: 2vw;
+            margin-bottom: -2vw;
+        }
     }
 
     .lineaTipsCocinaVideosUno {
@@ -146,23 +170,23 @@ video {
         width: 90%;
         margin-left: 5vw;
         margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin-bottom: 2vw;
     }
 
     .lineaTipsCocinaVideosDos {
         height: 5vw;
         width: 90%;
         margin-left: 5vw;
-        margin-top: 3vw;
-        margin-bottom: 2.5vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
     }
 
     .lineaTipsCocinaVideosTres {
         height: 5vw;
         width: 90%;
         margin-left: 5vw;
-        margin-top: 2.5vw;
-        margin-bottom: 3.5vw;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
     }
 
     .lineaTipsCocinaVideosCuatro {
@@ -170,34 +194,57 @@ video {
         width: 90%;
         margin-left: 5vw;
         margin-top: 4vw;
-        margin-bottom: 4vw;
+        margin-bottom: 3.4vw;
     }
 
     .lineaTipsCocinaVideosCinco {
         height: 5vw;
         width: 90%;
         margin-left: 5vw;
-        margin-top: 3.5vw;
-        margin-bottom: 1vw;
+        margin-top: 3.3vw;
+        margin-bottom: 4vw;
     }
 
-    .cabeceraVideos> p {
-        margin-top: 3vw;
-    }
 
-    .cabeceraVideos> h2 {
-        margin-top: 2vw;
-        margin-bottom: -2vw;
+    .fechaVideos {
+        font-size: 1.5vw;
+        
     }
 
     .valoracionEstrellas {
         margin-top: 3vw;
     }
+}
 
-   
+@media (min-width: 992px) {
+    
+    .cabeceraVideos {
+        p {
+            font-size: 1.2vw;    
+        }
+        h2 {
+            font-size: 2.1vw;
+        }
+    }
 
+    .lineaTipsCocinaVideosUno {
+        margin-top: 3.3vw;
+        margin-bottom: 2.3vw;
+    }
 
+    .lineaTipsCocinaVideosTres {
+        margin-top: 2.5vw;
+        margin-bottom: 3.5vw;
+    }
 
+    .lineaTipsCocinaVideosCuatro {
+        margin-top: 3.6vw;
+        margin-bottom: 3.6vw;
+    }
 
+    .lineaTipsCocinaVideosCinco {
+        margin-top: 3.5vw;
+        margin-bottom: 2vw;
+    }
 
 }
