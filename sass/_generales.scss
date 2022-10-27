@@ -217,7 +217,7 @@ footer {
 
 
 @media (min-width: 768px) {
-
+    
     .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
         padding-right:0.5rem ;
     }
@@ -258,12 +258,13 @@ footer {
     }
     
     .navbar-brand {
-        height: 6vw;
+        height: 5vw;
     }
 
     .nav-item {
         font-size: 1.8vw;
     }
+
 
 
     .imagenSuscripcion {
