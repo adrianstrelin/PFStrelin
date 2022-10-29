@@ -178,7 +178,7 @@ header {
 
     p {
         font-size: 3vw;
-        margin-top: 4vw;
+        margin: 4vw 8vw 2vw 6vw;
         font-weight: 300;
     }
 
@@ -234,7 +234,7 @@ header {
     p {
         font-size: 3vw;
         font-weight: 300;
-        margin-top: 2.4vw;
+        margin: 2.4vw 4vw -5vw 3vw;
         margin-bottom: 6vw;
     }
 }
@@ -472,7 +472,7 @@ header {
     header {
 
         h1 {
-            margin-top: 4vw;
+            margin-top: 9vw;
             font-size: 6vw;
         }
 
@@ -482,7 +482,7 @@ header {
         background-image: url(../img/fotoportadainicio-large.webp);
         background-position: center;
         background-repeat: no-repeat;
-        height: 68vw;
+        height: 73vw;
         width: 100vw;
         background-size: cover;
         color: wheat;
@@ -528,7 +528,7 @@ header {
 
         p {
             font-size: 2.1vw;
-            margin-top: 18vw;
+            margin: 18vw 2vw 2vw 2vw;
             font-weight: 300;
         }
 
@@ -540,16 +540,22 @@ header {
         h2 {
             font-size: 3.5vw;
             margin-top: 8vw;
+            padding-bottom: -5vw;
+        }
+
+        p {
+            font-size: 2.1vw;
+            margin-bottom: 11vw;
         }
     }
 
     .imagenesChefs {
         @include elementos-grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-top: -5vw;
-        align-content: center;
-        max-height: 512vw;
+        grid-template-rows: 1fr;
+        margin-top: -5.1vw;
+        align-content: stretch;
+        height: 58vw;
         width: 100vw;
         gap: 0.5vw;
         background-color: wheat;
@@ -558,8 +564,8 @@ header {
     .chef {
         width: 4vw;
         height: 37vw;
-        margin-left: 6vw;
-
+        margin: -7vw 0 3.6vw 6vw;
+        
         img {
             width: 20vw;
             height: 20vw;
@@ -577,16 +583,16 @@ header {
     }
 
     .carousel-inner {
-        margin: -13vw 2.4vw;
-        width: 44.9vw;
+        margin: -13vw 1.4vw;
+        width: 45.9vw;
     }
 
     .carousel-control-prev {
-        margin-left: -8vw;
+        margin-left: 5.5vw;
     }
 
     .carousel-control-next {
-        margin-right: -3.5vw;
+        margin-right: -5.5vw;
     }
 
     .container-fluid {
@@ -612,7 +618,7 @@ header {
         height: 1vw;
         border-radius: 10vw;
         border-style: solid black;
-        margin: -66vw 0 -4vw 50vw;
+        margin: -66.5vw 0 -4vw 50vw;
         width: 25vw;
     }
 
@@ -663,9 +669,9 @@ header {
 
 
     .parrafoChefs {
-        height: 6vw;
+        height: 5vw;
         width: 13vw;
-        margin: 5vw 0 -3.4vw 3.5vw;
+        margin: 2vw 0 -3.4vw 3.5vw;
     }
 
 
@@ -689,6 +695,71 @@ header {
 
 @media (min-width: 992px) {
 
+    header {
+
+        h1 {
+            margin-top: 6vw;
+            font-size: 5vw;
+        }
+
+        @include elementos-grid;
+        margin-bottom: 12vw;
+        margin-top: 5vw;
+        background-image: url(../img/fotoportadainicio-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 64vw;
+        width: 100vw;
+        background-size: cover;
+        color: wheat;
+    }
+
+    .inicioMain {
+        height: 26vw;
+        margin-left: -20vw;
+        width: 119vw;
+    }
+
+    .verRecetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: -12vw 0 -5vw -14vw;
+        background-image: url(../img/fondomain-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        max-height: 30vw;
+        background-size: cover;
+        width: 55vw;
+
+        h2 {
+            font-size: 3vw;
+            margin: 2vw 0 -21vw 0;
+            font-weight: 500;
+        }
+
+        a {
+            cursor: pointer;
+            border: 0;
+            font-weight: bold;
+            color: black;
+            border-radius: 10vw;
+            max-height: 5vw;
+            width: 19vw;
+            font-size: 1.3vw;
+            padding: 0.6vw;
+            margin: -4vw 0 0 0;
+        }
+
+        p {
+            font-size: 1.7vw;
+            margin-top: 18vw;
+            font-weight: 300;
+        }
+
+    }
+
     .buscaRecetas {
         display: flex;
         flex-direction: column;
@@ -711,21 +782,41 @@ header {
 
     }
 
+    .source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        padding: 1.5vw;
+        height: 1vw;
+        border-radius: 10vw;
+        border-style: solid black;
+        margin: -61vw 0 -4vw 50vw;
+        width: 21vw;
+    }
+
 
     .sourceReceta {
         border: none;
         background: none;
         outline: none;
         color: black;
-        font-size: 3vw;
+        font-size: 1.8vw;
         line-height: 2vw;
-        transition: .3s;
-        width: 0;
+        width: 14vw;
     }
 
     .source:hover>.sourceReceta {
         width: 22vw;
         font-size: 2.0vw;
+    }
+
+    .botonSource {
+        max-width: 3vw;
+        height: 3.3vw;
+        text-decoration: none;
+        color: white;
+        font-size: 2.3vw;
     }
 
     .container,
@@ -736,7 +827,7 @@ header {
     }
 
     .carousel-inner {
-        margin: 3vw -7vw;
+        margin: -13vw 2.3vw;
         width: 45vw;
     }
 
@@ -748,21 +839,50 @@ header {
         margin-right: 3.5vw;
     }
 
+
+    .textoChefs {
+        h2 {
+            font-size: 3vw;
+        }
+
+        p {
+            font-size: 1.7vw;
+        }
+    }
+
     .parrafoChefs {
 
 
         a {
             height: 6vw;
             min-width: 14vw;
-            margin-top: 3.5vw;
+            margin-top: 4vw;
             font-weight: 600;
-            font-size: 1vw;
+            font-size: 1.4vw;
         }
     }
 
     .imagenesValoracion {
-        margin: 0 0 0 -0.5vw;
+        margin: 0 0 0 0,1vw;
     }
+
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .carousel-control-prev {
+        margin-left: 33vw;
+
+    }
+
+    .carousel-control-next {
+        margin-left: -11.5vw;
+    }
+
+
+
 
 
 
