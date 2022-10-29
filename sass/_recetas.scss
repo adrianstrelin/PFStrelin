@@ -23,9 +23,6 @@
 
 /* RECETAS */
 
-.tituloRecetas {
-    margin-bottom: -5vw;
-}
 
 .lineaImagenesRecetasUno {
     height: 5vw;
@@ -47,7 +44,6 @@
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 1.5em;
     display: grid;
     grid-template-areas:
         "imagenesRecetas"
@@ -59,12 +55,13 @@
 .muchasRecetas {
     @include elementos-grid;
     align-items: center;
-    margin-bottom: 12vw;
+    margin: -122vw 0 11vw 0;
 }
 
 
+
+
 .tituloRecetas {
-    margin-top: -4vw;
     margin-bottom: -5vw;
 }
 
@@ -73,6 +70,15 @@
     @include elementos-grid;
     align-items: center;
     margin: 3vw;
+}
+
+.recetasMain {
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: auto;
+    height: 708vw;
 }
 
 .imagenRecetaUno img,
@@ -109,8 +115,6 @@
     .tituloRecetas {
         @include elementos-flex-row;
         justify-content: center;
-        margin-left: 0vw;
-        margin-top: -9vw;
 
     }
 

@@ -57,6 +57,16 @@ img {
   padding-right: 1.5rem;
 }
 
+.navbar-brand {
+  margin-left: 2vw;
+  margin-top: 0.5vw;
+}
+.navbar-brand img {
+  margin: -1vw 0 0 1vw;
+  height: 8.2vw;
+  width: 8.2vw;
+}
+
 ul {
   list-style-type: none;
 }
@@ -179,6 +189,11 @@ footer a:hover {
   .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
     padding-right: 1.5rem;
   }
+  .navbar-brand img {
+    margin: -0.9vw 0 0 1vw;
+    height: 6vw;
+    width: 6vw;
+  }
   .container,
 .container-sm {
     max-width: 770px;
@@ -210,7 +225,7 @@ footer a:hover {
 }
 @media (min-width: 768px) {
   .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
-    padding-right: 0.5rem;
+    padding-right: 1.5rem;
   }
   .navbar-nav .nav-item {
     position: relative;
@@ -237,6 +252,14 @@ footer a:hover {
     flex-wrap: wrap;
     align-content: flex-end;
   }
+  .navbar-brand {
+    margin-left: 0.6vw;
+  }
+  .navbar-brand img {
+    margin: -0.7vw 0 0 1vw;
+    height: 4vw;
+    width: 4vw;
+  }
   .container, .container-sm {
     max-width: 2618px;
   }
@@ -249,6 +272,7 @@ footer a:hover {
   }
   .nav-item {
     font-size: 1.8vw;
+    margin-bottom: -0.3vw;
   }
   .imagenSuscripcion {
     height: 40vw;
@@ -337,8 +361,12 @@ footer a:hover {
 }
 @media (min-width: 992px) {
   .navbar-brand {
-    height: 4vw;
-    margin-top: 0.5vw;
+    margin-left: 0.6vw;
+  }
+  .navbar-brand img {
+    margin: 0.5vw 0 0 1vw;
+    height: 3vw;
+    width: 3vw;
   }
   .orange {
     height: 5vw;
@@ -354,6 +382,18 @@ footer a:hover {
 @media (min-width: 1200px) {
   .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
     padding-right: 2rem;
+  }
+  .navbar-brand {
+    margin-left: 0.6vw;
+  }
+  .navbar-brand img {
+    margin: 0.7vw 0 0 1vw;
+    height: 3vw;
+    width: 3vw;
+  }
+  .nav-item {
+    font-size: 1.2vw;
+    margin: 0.5vw 2vw 0 0;
   }
 }
 /* NOMBRE DE AREAS INICIO */
@@ -1129,10 +1169,6 @@ header h1 {
 }
 
 /* RECETAS */
-.tituloRecetas {
-  margin-bottom: -5vw;
-}
-
 .lineaImagenesRecetasUno {
   height: 5vw;
   width: 80%;
@@ -1153,7 +1189,6 @@ header h1 {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 1.5em;
   display: grid;
   grid-template-areas: "imagenesRecetas" "sectionRecetas" "imagenSuscripcion" "footer";
 }
@@ -1163,11 +1198,10 @@ header h1 {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   align-items: center;
-  margin-bottom: 12vw;
+  margin: -122vw 0 11vw 0;
 }
 
 .tituloRecetas {
-  margin-top: -4vw;
   margin-bottom: -5vw;
 }
 
@@ -1177,6 +1211,15 @@ header h1 {
   grid-template-rows: 1fr;
   align-items: center;
   margin: 3vw;
+}
+
+.recetasMain {
+  display: grid;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: auto;
+  height: 708vw;
 }
 
 .imagenRecetaUno img,
@@ -1215,8 +1258,6 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 0vw;
-    margin-top: -9vw;
   }
   .lineaImagenesRecetasUno {
     margin-left: 10vw;
