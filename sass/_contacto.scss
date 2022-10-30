@@ -4,6 +4,10 @@
     margin: 4vw 0 4vw 0;
 }
 
+.contactoMain {
+    margin-top: 125vw;
+}
+
 .lineaContactos {
     height: 5vw;
     width: 80%;
@@ -13,6 +17,14 @@
 }
 
 @media (min-width: 576px) {
+
+    .contactoMain {
+        margin-top: 84vw;
+    }
+
+    .tituloContacto {
+        margin-left: -1vw;
+    }
 
     .lineaContactos {
         width: 60%;
@@ -24,6 +36,10 @@
 
 
 @media (min-width: 768px) {
+
+    .contactoMain {
+        margin-top: 61vw;
+    }
 
     .tituloContacto {
         margin-bottom: 4vw;
@@ -39,4 +55,17 @@
 
 
 
+}
+
+@media (min-width: 992px) { 
+    
+    .contactoMain {
+        margin-top: 54vw;
+    }
+
+    .lineaContactos {
+        height: 5vw;
+        width: 70%;
+        margin: -1vw 0 4vw 15vw;
+    }
 }
