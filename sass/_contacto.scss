@@ -6,6 +6,12 @@
 
 .contactoMain {
     margin-top: 125vw;
+    background-image: url(../img/fondomain-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    background-size: cover;
+    width: auto;
 }
 
 .lineaContactos {
@@ -14,6 +20,10 @@
     margin-left: 10vw;
     margin-top: 1vw;
     margin-bottom: 6vw;
+}
+
+.form-control {
+    border-radius: 3vw;
 }
 
 @media (min-width: 576px) {

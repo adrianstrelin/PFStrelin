@@ -7,7 +7,7 @@
 body {
     text-align: center;
     font-weight: bolder;
-    letter-spacing: 0,03em;
+    letter-spacing: 0, 03em;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,6 +17,7 @@ header {
     display: grid;
     justify-content: center;
     font-family: 'Courgette', cursive;
+
     h1 {
         font-size: 6vw;
     }
@@ -50,22 +51,29 @@ img {
 }
 
 
-.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
     margin-top: -0.2vw;
     margin-left: auto;
     margin-right: auto;
-    padding-left:1rem ;
-    padding-right:1.5rem ;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
 }
 
 .navbar-brand {
     margin-left: 2vw;
     margin-top: 0.5vw;
+
     img {
         margin: -1vw 0 0 1vw;
         height: 8.2vw;
         width: 8.2vw;
-        }
+    }
 }
 
 ul {
@@ -84,6 +92,7 @@ footer {
     background-color: wheat;
     margin-bottom: 0;
     margin-top: 1.5em;
+
     a:hover {
         color: #FF7F50;
     }
@@ -98,7 +107,7 @@ footer {
     height: 53vw;
     width: auto;
     background-size: cover;
-    color:wheat;
+    color: wheat;
     margin-bottom: -7vw;
 }
 
@@ -148,9 +157,8 @@ footer {
     @include elementos-flex-row;
     align-items: center;
     gap: 3vw;
-    margin: 8vw 0 5vw 0;
+    margin: 8vw 4vw 5vw 4vw;
     font-size: 2.5vw;
-    margin-left: 2.5vw;
 }
 
 .redes {
@@ -172,7 +180,7 @@ footer {
     justify-content: center;
     margin-bottom: -4vw;
 
-    h3{
+    h3 {
         font-size: 4vw;
     }
 }
@@ -188,8 +196,14 @@ footer {
 
 @media (min-width: 576px) {
 
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-        padding-right:1.5rem ;
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        padding-right: 1.5rem;
     }
 
     .navbar-brand {
@@ -197,7 +211,7 @@ footer {
             margin: -0.9vw 0 0 1vw;
             height: 6vw;
             width: 6vw;
-            }
+        }
     }
 
     .container,
@@ -211,15 +225,13 @@ footer {
     }
 
     .textoSuscripcionDos h4 {
-    text-align: center;
-    margin-top: -22vw;
+        text-align: center;
+        margin-top: -22vw;
     }
 
 
     .footerMenu {
         justify-content: space-evenly;
-        margin-top: 10vw;
-        margin-left: -0.5vw;
     }
 
     .redes {
@@ -239,34 +251,40 @@ footer {
 
 
 @media (min-width: 768px) {
-    
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
         padding-right: 1.5rem;
     }
 
     .navbar-nav .nav-item {
         position: relative;
     }
-    
+
     .navbar-nav .nav-item a::before {
         content: "";
         height: 2px;
         width: 0%;
-        background:wheat;
+        background: wheat;
         position: absolute;
         left: 0;
         bottom: 3px;
         transition: 0.4s ease-out;
     }
-    
+
     .navbar-nav .nav-item:hover a::before {
         width: 100%;
-        }
+    }
 
-        .navbar-light .navbar-nav .nav-link:hover {
-            color: wheat;
-        }
-    
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: wheat;
+    }
+
 
     .navbar-expand-md .navbar-collapse {
         display: flex;
@@ -277,14 +295,16 @@ footer {
 
     .navbar-brand {
         margin-left: 0.6vw;
+
         img {
             margin: -0.7vw 0 0 1vw;
             height: 4vw;
             width: 4vw;
-            }
+        }
     }
 
-    .container, .container-sm {
+    .container,
+    .container-sm {
         max-width: 2618px;
     }
 
@@ -292,7 +312,7 @@ footer {
         height: 7vw;
         width: 100vw;
     }
-    
+
     .navbar-brand {
         height: 5vw;
     }
@@ -330,7 +350,7 @@ footer {
         height: 3vw;
         width: 37vw;
     }
-    
+
     .botonSuscripcion {
         height: 3vw;
         width: 10vw;
@@ -393,69 +413,166 @@ footer {
         font-size: 2vw;
     }
 
-    
+
     .textoRedesTres h4 {
         font-size: 2vw;
         margin-top: 10vw;
-        }
-    
+    }
+
     .textoContactos h5 {
         font-size: 2vw;
     }
-    }
+}
 
-    @media (min-width: 992px) {
+@media (min-width: 992px) {
 
-        .navbar-brand {
-            margin-left: 0.6vw;
-            img {
-                margin: 0.5vw 0 0 1vw;
-                height: 3vw;
-                width: 3vw;
-                }
-        }
+    .navbar-brand {
+        margin-left: 0.6vw;
 
-        .orange {
-            height: 5vw;
-        }
-
-        .nav-item {
-            font-size: 1.5vw;
-            margin-top: 0.5vw;
-        }
-        
-        .btn-sm {
+        img {
+            margin: 0.5vw 0 0 1vw;
             height: 3vw;
-
+            width: 3vw;
         }
+    }
+
+    .orange {
+        height: 5vw;
+    }
+
+    .nav-item {
+        font-size: 1.5vw;
+        margin-top: 0.5vw;
+    }
+
+    .btn-sm {
+        height: 3vw;
 
     }
 
-    @media (min-width: 1200px) {
-        
-        .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-            padding-right: 2rem ;
-        }
+}
 
-        .navbar-brand {
-            margin-left: 0.6vw;
-            img {
-                margin: 0.7vw 0 0 1vw;
-                height: 3vw;
-                width: 3vw;
-                }
-        }
+@media (min-width: 1200px) {
 
-        .nav-item {
-            font-size: 1.2vw;
-            margin: 0.5vw 2vw 0 0;
-        }
-
-
-
-
-
-
-
-
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        padding-right: 2rem;
     }
+
+    .navbar-brand {
+        margin-left: 0.6vw;
+
+        img {
+            margin: 0.7vw 0 0 1vw;
+            height: 3vw;
+            width: 3vw;
+        }
+    }
+
+    .nav-item {
+        font-size: 1.2vw;
+        margin: 0.5vw 2vw 0 0;
+    }
+
+
+
+
+
+    .imagenSuscripcion {
+        @include elementos-grid;
+        background-image: url(../img/fondosuscripcion-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 29vw;
+        width: auto;
+        background-size: cover;
+        color: wheat;
+        margin-bottom: -7vw;
+    }
+
+    .textoSuscripcionUno h3 {
+        margin-right: 42vw;
+        font-size: 2.2vw;
+        margin-top: 9vw;
+    }
+
+    .textoSuscripcionDos h4 {
+        font-size: 1.5vw;
+        margin-bottom: 18.5vw;
+        margin-right: 52.5vw;
+        margin-top: 1vw;
+    }
+
+
+    .formulario {
+        margin-left: -53vw;
+        margin-top: -16.5vw;
+    }
+    
+
+    input {
+        text-align: center;
+        height: 2vw;
+        width: 18vw;
+    }
+
+    .btn-sm {
+        height: 2.6vw;
+    }
+
+
+
+
+
+
+    footer {
+        padding: 3em 3em 0em 3em;
+        background-color: wheat;
+        margin-bottom: 0;
+        margin-top: 7vw;
+        height: 26vw;
+
+        a:hover {
+            color: #FF7F50;
+        }
+    }
+
+    .textoRedesUno h3 {
+        font-size: 2.2vw;
+        margin: -0.5vw 0 0 2vw;
+    }
+
+    .textoRedesDos h3 {
+        font-size: 1.6vw;
+        margin: -2.5vw 0 0 2vw;
+    }
+
+    .lineaFooter {
+        margin-top: 7vw;
+    }
+
+    .footerMenu {
+        margin-top: 3vw;
+        font-size: 1.2vw;
+    }
+
+    .textoRedesTres h4 {
+        font-size: 1.5vw;
+        margin-top: -2.2vw;
+    }
+
+    .textoContactos h5 {
+        font-size: 1.5vw;
+    }
+
+
+
+
+
+
+}

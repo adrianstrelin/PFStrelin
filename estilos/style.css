@@ -49,7 +49,13 @@ img {
   color: wheat;
 }
 
-.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
   margin-top: -0.2vw;
   margin-left: auto;
   margin-right: auto;
@@ -145,9 +151,8 @@ footer a:hover {
   flex-direction: row;
   align-items: center;
   gap: 3vw;
-  margin: 8vw 0 5vw 0;
+  margin: 8vw 4vw 5vw 4vw;
   font-size: 2.5vw;
-  margin-left: 2.5vw;
 }
 
 .redes {
@@ -186,7 +191,13 @@ footer a:hover {
 }
 
 @media (min-width: 576px) {
-  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+  .navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
     padding-right: 1.5rem;
   }
   .navbar-brand img {
@@ -207,8 +218,6 @@ footer a:hover {
   }
   .footerMenu {
     justify-content: space-evenly;
-    margin-top: 10vw;
-    margin-left: -0.5vw;
   }
   .redes {
     align-items: center;
@@ -224,7 +233,13 @@ footer a:hover {
   }
 }
 @media (min-width: 768px) {
-  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+  .navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
     padding-right: 1.5rem;
   }
   .navbar-nav .nav-item {
@@ -260,7 +275,8 @@ footer a:hover {
     height: 4vw;
     width: 4vw;
   }
-  .container, .container-sm {
+  .container,
+.container-sm {
     max-width: 2618px;
   }
   .orange {
@@ -380,7 +396,13 @@ footer a:hover {
   }
 }
 @media (min-width: 1200px) {
-  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+  .navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xxl {
     padding-right: 2rem;
   }
   .navbar-brand {
@@ -394,6 +416,74 @@ footer a:hover {
   .nav-item {
     font-size: 1.2vw;
     margin: 0.5vw 2vw 0 0;
+  }
+  .imagenSuscripcion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-image: url(../img/fondosuscripcion-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 29vw;
+    width: auto;
+    background-size: cover;
+    color: wheat;
+    margin-bottom: -7vw;
+  }
+  .textoSuscripcionUno h3 {
+    margin-right: 42vw;
+    font-size: 2.2vw;
+    margin-top: 9vw;
+  }
+  .textoSuscripcionDos h4 {
+    font-size: 1.5vw;
+    margin-bottom: 18.5vw;
+    margin-right: 52.5vw;
+    margin-top: 1vw;
+  }
+  .formulario {
+    margin-left: -53vw;
+    margin-top: -16.5vw;
+  }
+  input {
+    text-align: center;
+    height: 2vw;
+    width: 18vw;
+  }
+  .btn-sm {
+    height: 2.6vw;
+  }
+  footer {
+    padding: 3em 3em 0em 3em;
+    background-color: wheat;
+    margin-bottom: 0;
+    margin-top: 7vw;
+    height: 26vw;
+  }
+  footer a:hover {
+    color: #FF7F50;
+  }
+  .textoRedesUno h3 {
+    font-size: 2.2vw;
+    margin: -0.5vw 0 0 2vw;
+  }
+  .textoRedesDos h3 {
+    font-size: 1.6vw;
+    margin: -2.5vw 0 0 2vw;
+  }
+  .lineaFooter {
+    margin-top: 7vw;
+  }
+  .footerMenu {
+    margin-top: 3vw;
+    font-size: 1.2vw;
+  }
+  .textoRedesTres h4 {
+    font-size: 1.5vw;
+    margin-top: -2.2vw;
+  }
+  .textoContactos h5 {
+    font-size: 1.5vw;
   }
 }
 /* NOMBRE DE AREAS INICIO */
@@ -1688,6 +1778,12 @@ video {
 
 .contactoMain {
   margin-top: 125vw;
+  background-image: url(../img/fondomain-large.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+  background-size: cover;
+  width: auto;
 }
 
 .lineaContactos {
@@ -1696,6 +1792,10 @@ video {
   margin-left: 10vw;
   margin-top: 1vw;
   margin-bottom: 6vw;
+}
+
+.form-control {
+  border-radius: 3vw;
 }
 
 @media (min-width: 576px) {
