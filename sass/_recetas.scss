@@ -113,13 +113,12 @@
 
 .enlaceRecetas {
     @include elementos-grid;
-    margin: 5vw 5vw;
     font-weight: 600;
     text-decoration: none;
     max-height: 13vw;
     text-align: center;
     background-color: $colorGeneral;
-    border-radius: 1vw;
+    border-radius: 3vw;
     margin: 4vw;
 }
 
@@ -262,7 +261,6 @@
     .enlaceRecetas {
         max-height: 6vw;
         align-items: center;
-        border-radius: 1vw;
         width: auto;
 
         a:hover {
@@ -278,6 +276,12 @@
 
 @media (min-width: 992px) {
 
+    .tituloRecetas {
+        margin-left: -1vw;
+        margin-top: 0vw;
+        margin-left: 0vw;
+    }
+
 
     .imagenesRecetas {
     margin-top: -66vw;
@@ -291,7 +295,6 @@
     .enlaceRecetas {
         height: 7vw;
         align-items: center;
-        border-radius: 1vw;
         width: auto;
 }
 
@@ -300,4 +303,31 @@
 .imagenRecetaSeis img {
     margin-top: -10vw;
 }
+}
+
+
+@media (min-width: 1200px) {
+    
+    .imagenesRecetas {
+        margin: -75vw 0 0 7.5vw;
+
+        img {
+            width: 20vw;
+            height: 13vw;
+        }
+        }
+        
+        .enlaceRecetas {
+            height: 4vw;
+            align-items: center;
+            width: auto;
+    }
+
+    .recetasMain {
+        margin-bottom: -25vw;
+    }
+
+
+
+
 }

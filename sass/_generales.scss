@@ -12,18 +12,6 @@ body {
 }
 
 
-header {
-    font-size: large;
-    display: grid;
-    justify-content: center;
-    font-family: 'Courgette', cursive;
-
-    h1 {
-        font-size: 6vw;
-    }
-}
-
-
 img {
     width: 100%;
     height: 100%;
@@ -84,6 +72,65 @@ ul {
 a {
     text-decoration: none;
     color: black;
+}
+
+header {
+
+    h1 {
+        margin-top: 17vw;
+        font-size: 9vw;
+    }
+
+    @include elementos-grid;
+    margin-bottom: 12vw;
+    margin-top: 10vw;
+    background-image: url(../img/fotoportadainicio-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 151vw;
+    width: 100vw;
+    background-size: cover;
+    color: wheat;
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+}
+
+.source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    max-height: 7vw;
+    background-color: white;
+    border-radius: 10vw;
+    border-style: solid black;
+    margin: -133vw 0 -4vw 28vw;
+    width: 43.5vw;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.sourceReceta {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    color: black;
+    width: 27vw;
+    font-size: 3.5vw;
+}
+
+.botonSource {
+    width: 3vw;
+    height: 6vw;
+    text-decoration: none;
+    color: white;
+    font-size: 4vw;
 }
 
 
@@ -218,7 +265,37 @@ footer {
     .container-sm {
         max-width: 770px;
     }
+    
+    header {
 
+        h1 {
+            margin-top: 11vw;
+            font-size: 7vw;
+        }
+
+        @include elementos-grid;
+        margin-bottom: 12vw;
+        margin-top: 6vw;
+        background-image: url(../img/fotoportadainicio-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vw;
+        width: 100vw;
+        background-size: cover;
+        color: wheat;
+    }
+
+    .source {
+        max-height: 5vw;
+        margin: -91vw 0 -4vw 34vw;
+        width: 31vw;
+    }
+
+    .sourceReceta {
+        font-size: 2.3vw;
+        line-height: 5vw;
+        width: 19vw;
+    }
 
     .textoSuscripcionUno h3 {
         text-align: center;
@@ -322,6 +399,55 @@ footer {
         margin-bottom: -0.3vw;
     }
 
+    header {
+
+        h1 {
+            margin-top: 6.9vw;
+            font-size: 6vw;
+        }
+
+        @include elementos-grid;
+        margin-bottom: 12vw;
+        margin-top: 6vw;
+        background-image: url(../img/fotoportadainicio-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 73vw;
+        width: 100vw;
+        background-size: cover;
+        color: wheat;
+    }
+
+    .source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        padding: 2vw;
+        height: 1vw;
+        border-radius: 10vw;
+        border-style: solid black;
+        margin: -68vw 0 -4vw 50vw;
+        width: 26vw;
+    }
+
+    .sourceReceta {
+        border: none;
+        background: none;
+        outline: none;
+        color: black;
+        font-size: 2vw;
+        line-height: 5vw;
+        transition: .3s;
+    }
+
+    .botonSource {
+        max-width: 3vw;
+        height: 3.5vw;
+        text-decoration: none;
+        color: white;
+        font-size: 2.5vw;
+    }
 
 
     .imagenSuscripcion {
@@ -450,6 +576,59 @@ footer {
 
     }
 
+    header {
+
+        h1 {
+            margin-top: 6vw;
+            font-size: 5vw;
+        }
+
+        @include elementos-grid;
+        margin-bottom: 12vw;
+        margin-top: 5vw;
+        background-image: url(../img/fotoportadainicio-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 64vw;
+        width: 100vw;
+        background-size: cover;
+        color: wheat;
+    }
+    
+    .source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        padding: 1.9vw;
+        height: 1vw;
+        border-radius: 10vw;
+        border-style: solid black;
+        margin: -61vw 0 -4vw 50vw;
+        width: 23vw;
+    }
+
+
+    .sourceReceta {
+        border: none;
+        background: none;
+        outline: none;
+        color: black;
+        font-size: 1.8vw;
+        line-height: 2vw;
+        width: 14vw;
+    }
+
+
+
+    .botonSource {
+        max-width: 3vw;
+        height: 3.3vw;
+        text-decoration: none;
+        color: white;
+        font-size: 2.3vw;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -479,6 +658,59 @@ footer {
         margin: 0.5vw 2vw 0 0;
     }
 
+
+    header {
+
+        h1 {
+            margin-top: 3vw;
+            font-size: 4vw;
+        }
+
+        @include elementos-grid;
+        margin-bottom: 12vw;
+        margin-top: 5vw;
+        background-image: url(../img/fotoportadainicio-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vw;
+        width: 100vw;
+        background-size: cover;
+        color: wheat;
+    }
+
+    .source {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        padding: 1.2vw;
+        height: 1vw;
+        border-radius: 10vw;
+        border-style: solid black;
+        margin: -52.5vw 0 -4vw 50vw;
+        width: 18vw;
+    }
+
+
+    .sourceReceta {
+        border: none;
+        background: none;
+        outline: none;
+        color: black;
+        font-size: 1.4vw;
+        line-height: 2vw;
+        width: 11vw;
+    }
+
+   
+
+    .botonSource {
+        max-width: 3vw;
+        height: 2.8vw;
+        text-decoration: none;
+        color: white;
+        font-size: 1.8vw;
+    }
 
 
 
@@ -570,8 +802,9 @@ footer {
         font-size: 1.5vw;
     }
 
-
-
+    .redes {
+        margin-top: 4vw;
+    }
 
 
 

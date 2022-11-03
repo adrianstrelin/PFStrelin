@@ -60,24 +60,6 @@ footer {
 }
 
 
-header {
-
-    h1 {
-        margin-top: 15vw;
-        font-size: 10vw;
-    }
-
-    @include elementos-grid;
-    margin-bottom: 12vw;
-    margin-top: 10vw;
-    background-image: url(../img/fotoportadainicio-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 151vw;
-    width: 100vw;
-    background-size: cover;
-    color: wheat;
-}
 
 .inicioMain {
     display: grid;
@@ -100,46 +82,6 @@ header {
     --bs-gutter-x: 0;
 }
 
-
-.source {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2vw;
-    max-height: 7vw;
-    background-color: white;
-    border-radius: 10vw;
-    border-style: solid black;
-    margin: -133vw 0 -4vw 28vw;
-    width: 43.5vw;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
-
-.sourceReceta {
-    display: flex;
-    align-items: center;
-    border: none;
-    background: none;
-    color: black;
-    width: 27vw;
-    font-size: 3.5vw;
-}
-
-.botonSource {
-    width: 3vw;
-    height: 6vw;
-    text-decoration: none;
-    color: white;
-    font-size: 4vw;
-}
-
-.source:hover>.sourceReceta {
-    min-width: 118px;
-}
 
 .verRecetas {
     display: flex;
@@ -338,24 +280,7 @@ header {
             "footer footer";
     }
 
-    header {
-
-        h1 {
-            margin-top: 11vw;
-            font-size: 7vw;
-        }
-
-        @include elementos-grid;
-        margin-bottom: 12vw;
-        margin-top: 6vw;
-        background-image: url(../img/fotoportadainicio-large.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vw;
-        width: 100vw;
-        background-size: cover;
-        color: wheat;
-    }
+    
 
     .inicioMain {
         height: 78vw;
@@ -367,17 +292,6 @@ header {
         height: 61vw;
     }
 
-    .source {
-        max-height: 5vw;
-        margin: -91vw 0 -4vw 34vw;
-        width: 31vw;
-    }
-
-    .sourceReceta {
-        font-size: 2.3vw;
-        line-height: 5vw;
-        width: 19vw;
-    }
 
     .verRecetas {
         display: flex;
@@ -469,24 +383,6 @@ header {
 
 @media (min-width: 768px) {
 
-    header {
-
-        h1 {
-            margin-top: 9vw;
-            font-size: 6vw;
-        }
-
-        @include elementos-grid;
-        margin-bottom: 12vw;
-        margin-top: 6vw;
-        background-image: url(../img/fotoportadainicio-large.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 73vw;
-        width: 100vw;
-        background-size: cover;
-        color: wheat;
-    }
 
     .inicioMain {
         height: 26vw;
@@ -527,7 +423,7 @@ header {
         }
 
         p {
-            font-size: 2.1vw;
+            font-size: 1.8vw;
             margin: 18vw 2vw 2vw 2vw;
             font-weight: 300;
         }
@@ -609,41 +505,6 @@ header {
         max-width: 1500px;
     }
 
-    .source {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translate(-50%, -50%);
-        padding: 1.5vw;
-        height: 1vw;
-        border-radius: 10vw;
-        border-style: solid black;
-        margin: -66.5vw 0 -4vw 50vw;
-        width: 25vw;
-    }
-
-    .sourceReceta {
-        border: none;
-        background: none;
-        outline: none;
-        color: black;
-        font-size: 2vw;
-        line-height: 5vw;
-        transition: .3s;
-    }
-
-    .botonSource {
-        max-width: 3vw;
-        height: 3.5vw;
-        text-decoration: none;
-        color: white;
-        font-size: 2.5vw;
-    }
-
-    .source:hover>.sourceReceta {
-        width: 208px;
-        font-size: 1.8vw;
-    }
 
     .buscaRecetas {
         display: flex;
@@ -695,24 +556,6 @@ header {
 
 @media (min-width: 992px) {
 
-    header {
-
-        h1 {
-            margin-top: 6vw;
-            font-size: 5vw;
-        }
-
-        @include elementos-grid;
-        margin-bottom: 12vw;
-        margin-top: 5vw;
-        background-image: url(../img/fotoportadainicio-large.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 64vw;
-        width: 100vw;
-        background-size: cover;
-        color: wheat;
-    }
 
     .inicioMain {
         height: 26vw;
@@ -782,42 +625,6 @@ header {
 
     }
 
-    .source {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform: translate(-50%, -50%);
-        padding: 1.5vw;
-        height: 1vw;
-        border-radius: 10vw;
-        border-style: solid black;
-        margin: -61vw 0 -4vw 50vw;
-        width: 21vw;
-    }
-
-
-    .sourceReceta {
-        border: none;
-        background: none;
-        outline: none;
-        color: black;
-        font-size: 1.8vw;
-        line-height: 2vw;
-        width: 14vw;
-    }
-
-    .source:hover>.sourceReceta {
-        width: 22vw;
-        font-size: 2.0vw;
-    }
-
-    .botonSource {
-        max-width: 3vw;
-        height: 3.3vw;
-        text-decoration: none;
-        color: white;
-        font-size: 2.3vw;
-    }
 
     .container,
     .container-sm {
@@ -852,7 +659,6 @@ header {
 
     .parrafoChefs {
 
-
         a {
             height: 6vw;
             min-width: 14vw;
@@ -872,6 +678,61 @@ header {
 
 @media (min-width: 1200px) {
 
+    .inicioMain {
+        height: 21vw;
+    }
+
+    .verRecetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: -12vw 0 -5vw -14vw;
+        background-image: url(../img/fondomain-large.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        max-height: 25vw;
+        background-size: cover;
+        width: 61vw;
+
+        h2 {
+            font-size: 2.3vw;
+            margin: 2vw 0 -21vw 0;
+            font-weight: 500;
+        }
+
+        a {
+            cursor: pointer;
+            border: 0;
+            font-weight: bold;
+            color: black;
+            border-radius: 10vw;
+            max-height: 5vw;
+            width: 13vw;
+            font-size: 1.1vw;
+            padding: 0.6vw;
+            margin: -4.5vw 0 0 0;
+        }
+
+        p {
+            font-size: 1.3vw;
+            margin-top: 18vw;
+            font-weight: 300;
+            padding: 0 4vw 0 4vw;
+        }
+
+
+    }
+
+    .carousel-inner {
+        margin: -13vw 8.3vw;
+        width: 39vw;
+    }
+
+    .carousel-inner .carousel-item>img {
+        height: 25vw;
+    }
+
     .carousel-control-prev {
         margin-left: 33vw;
 
@@ -881,9 +742,61 @@ header {
         margin-left: -11.5vw;
     }
 
+    .textoChefs {
+
+        margin-top: -10.5vw;
+        padding-bottom: 5vw; 
+
+        h2 {
+            font-size: 2.3vw;
+        }
+
+        p {
+            font-size: 1.3vw;
+        }
+    }
+
+    .imagenesChefs {
+        @include elementos-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: -5.1vw;
+        margin-bottom: -5vw;
+        align-content: stretch;
+        height: 42vw;
+        width: 100vw;
+        gap: 0.5vw;
+        background-color: wheat;
+    }
 
 
+    .chef {
 
+        margin: -12vw 0 4vw 8.5vw;
+        height: 25vw;
+
+        img {
+            width: 15vw;
+            height: 15vw;
+        }
+    }
+
+    .parrafoChefs {
+        height: 3.5vw;
+        margin: 2vw 0 -3.4vw 1vw;
+    }
+
+    .textoValoracion {
+        padding-top: 5vw;
+
+        h2 {
+            font-size: 2.3vw;
+        }
+    }
+    
+    .imagenesValoracion {
+        height: 20vw;
+    }
 
 
 }

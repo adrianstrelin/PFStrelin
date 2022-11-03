@@ -14,16 +14,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-header {
-  font-size: large;
-  display: grid;
-  justify-content: center;
-  font-family: "Courgette", cursive;
-}
-header h1 {
-  font-size: 6vw;
-}
-
 img {
   width: 100%;
   height: 100%;
@@ -80,6 +70,64 @@ ul {
 a {
   text-decoration: none;
   color: black;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 12vw;
+  margin-top: 10vw;
+  background-image: url(../img/fotoportadainicio-large.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 151vw;
+  width: 100vw;
+  background-size: cover;
+  color: wheat;
+  font-size: large;
+  display: grid;
+  justify-content: center;
+  font-family: "Courgette", cursive;
+}
+header h1 {
+  margin-top: 17vw;
+  font-size: 9vw;
+}
+
+.source {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  max-height: 7vw;
+  background-color: white;
+  border-radius: 10vw;
+  border-style: solid black;
+  margin: -133vw 0 -4vw 28vw;
+  width: 43.5vw;
+}
+.source a {
+  text-decoration: none;
+  color: black;
+}
+
+.sourceReceta {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  color: black;
+  width: 27vw;
+  font-size: 3.5vw;
+}
+
+.botonSource {
+  width: 3vw;
+  height: 6vw;
+  text-decoration: none;
+  color: white;
+  font-size: 4vw;
 }
 
 footer {
@@ -209,6 +257,34 @@ footer a:hover {
 .container-sm {
     max-width: 770px;
   }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 12vw;
+    margin-top: 6vw;
+    background-image: url(../img/fotoportadainicio-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+    background-size: cover;
+    color: wheat;
+  }
+  header h1 {
+    margin-top: 11vw;
+    font-size: 7vw;
+  }
+  .source {
+    max-height: 5vw;
+    margin: -91vw 0 -4vw 34vw;
+    width: 31vw;
+  }
+  .sourceReceta {
+    font-size: 2.3vw;
+    line-height: 5vw;
+    width: 19vw;
+  }
   .textoSuscripcionUno h3 {
     text-align: center;
   }
@@ -289,6 +365,52 @@ footer a:hover {
   .nav-item {
     font-size: 1.8vw;
     margin-bottom: -0.3vw;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 12vw;
+    margin-top: 6vw;
+    background-image: url(../img/fotoportadainicio-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 73vw;
+    width: 100vw;
+    background-size: cover;
+    color: wheat;
+  }
+  header h1 {
+    margin-top: 6.9vw;
+    font-size: 6vw;
+  }
+  .source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 2vw;
+    height: 1vw;
+    border-radius: 10vw;
+    border-style: solid black;
+    margin: -68vw 0 -4vw 50vw;
+    width: 26vw;
+  }
+  .sourceReceta {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 2vw;
+    line-height: 5vw;
+    transition: 0.3s;
+  }
+  .botonSource {
+    max-width: 3vw;
+    height: 3.5vw;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vw;
   }
   .imagenSuscripcion {
     height: 40vw;
@@ -394,6 +516,52 @@ footer a:hover {
   .btn-sm {
     height: 3vw;
   }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 12vw;
+    margin-top: 5vw;
+    background-image: url(../img/fotoportadainicio-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 64vw;
+    width: 100vw;
+    background-size: cover;
+    color: wheat;
+  }
+  header h1 {
+    margin-top: 6vw;
+    font-size: 5vw;
+  }
+  .source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 1.9vw;
+    height: 1vw;
+    border-radius: 10vw;
+    border-style: solid black;
+    margin: -61vw 0 -4vw 50vw;
+    width: 23vw;
+  }
+  .sourceReceta {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    width: 14vw;
+  }
+  .botonSource {
+    max-width: 3vw;
+    height: 3.3vw;
+    text-decoration: none;
+    color: white;
+    font-size: 2.3vw;
+  }
 }
 @media (min-width: 1200px) {
   .navbar > .container,
@@ -416,6 +584,52 @@ footer a:hover {
   .nav-item {
     font-size: 1.2vw;
     margin: 0.5vw 2vw 0 0;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 12vw;
+    margin-top: 5vw;
+    background-image: url(../img/fotoportadainicio-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 100vw;
+    background-size: cover;
+    color: wheat;
+  }
+  header h1 {
+    margin-top: 3vw;
+    font-size: 4vw;
+  }
+  .source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 1.2vw;
+    height: 1vw;
+    border-radius: 10vw;
+    border-style: solid black;
+    margin: -52.5vw 0 -4vw 50vw;
+    width: 18vw;
+  }
+  .sourceReceta {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 1.4vw;
+    line-height: 2vw;
+    width: 11vw;
+  }
+  .botonSource {
+    max-width: 3vw;
+    height: 2.8vw;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8vw;
   }
   .imagenSuscripcion {
     display: grid;
@@ -485,6 +699,9 @@ footer a:hover {
   .textoContactos h5 {
     font-size: 1.5vw;
   }
+  .redes {
+    margin-top: 4vw;
+  }
 }
 /* NOMBRE DE AREAS INICIO */
 header {
@@ -534,25 +751,6 @@ footer {
   grid-template-areas: "navBrand" "header" "source" "inicioMain" "textoChefs" "imagenesChefs" "textoValoracion" "imagenesValoracion" "imagenSuscripcion" "footer";
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  margin-bottom: 12vw;
-  margin-top: 10vw;
-  background-image: url(../img/fotoportadainicio-large.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 151vw;
-  width: 100vw;
-  background-size: cover;
-  color: wheat;
-}
-header h1 {
-  margin-top: 15vw;
-  font-size: 10vw;
-}
-
 .inicioMain {
   display: grid;
   flex-direction: column;
@@ -571,45 +769,6 @@ header h1 {
 
 .row {
   --bs-gutter-x: 0;
-}
-
-.source {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2vw;
-  max-height: 7vw;
-  background-color: white;
-  border-radius: 10vw;
-  border-style: solid black;
-  margin: -133vw 0 -4vw 28vw;
-  width: 43.5vw;
-}
-.source a {
-  text-decoration: none;
-  color: black;
-}
-
-.sourceReceta {
-  display: flex;
-  align-items: center;
-  border: none;
-  background: none;
-  color: black;
-  width: 27vw;
-  font-size: 3.5vw;
-}
-
-.botonSource {
-  width: 3vw;
-  height: 6vw;
-  text-decoration: none;
-  color: white;
-  font-size: 4vw;
-}
-
-.source:hover > .sourceReceta {
-  min-width: 118px;
 }
 
 .verRecetas {
@@ -789,40 +948,12 @@ header h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header" "source source" "textoChefs textoChefs" "imagenesChefs imagenesChefs" "textoValoracion textoValoracion" "imagenesValoracion imagenesValoracion" "imagenSuscripcion imagenSuscripcion" "footer footer";
   }
-  header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 12vw;
-    margin-top: 6vw;
-    background-image: url(../img/fotoportadainicio-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vw;
-    width: 100vw;
-    background-size: cover;
-    color: wheat;
-  }
-  header h1 {
-    margin-top: 11vw;
-    font-size: 7vw;
-  }
   .inicioMain {
     height: 78vw;
     width: 100vw;
   }
   .carousel-inner .carousel-item > img {
     height: 61vw;
-  }
-  .source {
-    max-height: 5vw;
-    margin: -91vw 0 -4vw 34vw;
-    width: 31vw;
-  }
-  .sourceReceta {
-    font-size: 2.3vw;
-    line-height: 5vw;
-    width: 19vw;
   }
   .verRecetas {
     display: flex;
@@ -897,24 +1028,6 @@ header h1 {
   }
 }
 @media (min-width: 768px) {
-  header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 12vw;
-    margin-top: 6vw;
-    background-image: url(../img/fotoportadainicio-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 73vw;
-    width: 100vw;
-    background-size: cover;
-    color: wheat;
-  }
-  header h1 {
-    margin-top: 9vw;
-    font-size: 6vw;
-  }
   .inicioMain {
     height: 26vw;
     margin-left: -20vw;
@@ -951,7 +1064,7 @@ header h1 {
     margin: -4vw 0 0 0;
   }
   .verRecetas p {
-    font-size: 2.1vw;
+    font-size: 1.8vw;
     margin: 18vw 2vw 2vw 2vw;
     font-weight: 300;
   }
@@ -1016,38 +1129,6 @@ header h1 {
 .container-sm {
     max-width: 1500px;
   }
-  .source {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-50%, -50%);
-    padding: 1.5vw;
-    height: 1vw;
-    border-radius: 10vw;
-    border-style: solid black;
-    margin: -66.5vw 0 -4vw 50vw;
-    width: 25vw;
-  }
-  .sourceReceta {
-    border: none;
-    background: none;
-    outline: none;
-    color: black;
-    font-size: 2vw;
-    line-height: 5vw;
-    transition: 0.3s;
-  }
-  .botonSource {
-    max-width: 3vw;
-    height: 3.5vw;
-    text-decoration: none;
-    color: white;
-    font-size: 2.5vw;
-  }
-  .source:hover > .sourceReceta {
-    width: 208px;
-    font-size: 1.8vw;
-  }
   .buscaRecetas {
     display: flex;
     flex-direction: column;
@@ -1087,24 +1168,6 @@ header h1 {
   }
 }
 @media (min-width: 992px) {
-  header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    margin-bottom: 12vw;
-    margin-top: 5vw;
-    background-image: url(../img/fotoportadainicio-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 64vw;
-    width: 100vw;
-    background-size: cover;
-    color: wheat;
-  }
-  header h1 {
-    margin-top: 6vw;
-    font-size: 5vw;
-  }
   .inicioMain {
     height: 26vw;
     margin-left: -20vw;
@@ -1164,38 +1227,6 @@ header h1 {
     font-size: 1vw;
     padding: 0.6vw;
   }
-  .source {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-50%, -50%);
-    padding: 1.5vw;
-    height: 1vw;
-    border-radius: 10vw;
-    border-style: solid black;
-    margin: -61vw 0 -4vw 50vw;
-    width: 21vw;
-  }
-  .sourceReceta {
-    border: none;
-    background: none;
-    outline: none;
-    color: black;
-    font-size: 1.8vw;
-    line-height: 2vw;
-    width: 14vw;
-  }
-  .source:hover > .sourceReceta {
-    width: 22vw;
-    font-size: 2vw;
-  }
-  .botonSource {
-    max-width: 3vw;
-    height: 3.3vw;
-    text-decoration: none;
-    color: white;
-    font-size: 2.3vw;
-  }
   .container,
 .container-sm {
     max-width: 2000px;
@@ -1230,11 +1261,102 @@ header h1 {
   }
 }
 @media (min-width: 1200px) {
+  .inicioMain {
+    height: 21vw;
+  }
+  .verRecetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: -12vw 0 -5vw -14vw;
+    background-image: url(../img/fondomain-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 25vw;
+    background-size: cover;
+    width: 61vw;
+  }
+  .verRecetas h2 {
+    font-size: 2.3vw;
+    margin: 2vw 0 -21vw 0;
+    font-weight: 500;
+  }
+  .verRecetas a {
+    cursor: pointer;
+    border: 0;
+    font-weight: bold;
+    color: black;
+    border-radius: 10vw;
+    max-height: 5vw;
+    width: 13vw;
+    font-size: 1.1vw;
+    padding: 0.6vw;
+    margin: -4.5vw 0 0 0;
+  }
+  .verRecetas p {
+    font-size: 1.3vw;
+    margin-top: 18vw;
+    font-weight: 300;
+    padding: 0 4vw 0 4vw;
+  }
+  .carousel-inner {
+    margin: -13vw 8.3vw;
+    width: 39vw;
+  }
+  .carousel-inner .carousel-item > img {
+    height: 25vw;
+  }
   .carousel-control-prev {
     margin-left: 33vw;
   }
   .carousel-control-next {
     margin-left: -11.5vw;
+  }
+  .textoChefs {
+    margin-top: -10.5vw;
+    padding-bottom: 5vw;
+  }
+  .textoChefs h2 {
+    font-size: 2.3vw;
+  }
+  .textoChefs p {
+    font-size: 1.3vw;
+  }
+  .imagenesChefs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: -5.1vw;
+    margin-bottom: -5vw;
+    align-content: stretch;
+    height: 42vw;
+    width: 100vw;
+    gap: 0.5vw;
+    background-color: wheat;
+  }
+  .chef {
+    margin: -12vw 0 4vw 8.5vw;
+    height: 25vw;
+  }
+  .chef img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .parrafoChefs {
+    height: 3.5vw;
+    margin: 2vw 0 -3.4vw 1vw;
+  }
+  .textoValoracion {
+    padding-top: 5vw;
+  }
+  .textoValoracion h2 {
+    font-size: 2.3vw;
+  }
+  .imagenesValoracion {
+    height: 20vw;
   }
 }
 /* NOMBRE AREAS RECETAS */
@@ -1347,13 +1469,12 @@ header h1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin: 5vw 5vw;
   font-weight: 600;
   text-decoration: none;
   max-height: 13vw;
   text-align: center;
   background-color: #ffaf87;
-  border-radius: 1vw;
+  border-radius: 3vw;
   margin: 4vw;
 }
 
@@ -1477,7 +1598,6 @@ header h1 {
   .enlaceRecetas {
     max-height: 6vw;
     align-items: center;
-    border-radius: 1vw;
     width: auto;
   }
   .enlaceRecetas a:hover {
@@ -1488,6 +1608,11 @@ header h1 {
   }
 }
 @media (min-width: 992px) {
+  .tituloRecetas {
+    margin-left: -1vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+  }
   .imagenesRecetas {
     margin-top: -66vw;
     gap: 6.5vw;
@@ -1498,13 +1623,29 @@ header h1 {
   .enlaceRecetas {
     height: 7vw;
     align-items: center;
-    border-radius: 1vw;
     width: auto;
   }
   .imagenRecetaCuatro img,
 .imagenRecetaCinco img,
 .imagenRecetaSeis img {
     margin-top: -10vw;
+  }
+}
+@media (min-width: 1200px) {
+  .imagenesRecetas {
+    margin: -75vw 0 0 7.5vw;
+  }
+  .imagenesRecetas img {
+    width: 20vw;
+    height: 13vw;
+  }
+  .enlaceRecetas {
+    height: 4vw;
+    align-items: center;
+    width: auto;
+  }
+  .recetasMain {
+    margin-bottom: -25vw;
   }
 }
 /*NOMBREA AREAS DE TIPS DE COCINA*/
@@ -1815,7 +1956,7 @@ video {
     margin-top: 61vw;
   }
   .tituloContacto {
-    margin-bottom: 4vw;
+    margin: 0 0 4vw 0vw;
   }
   .lineaContactos {
     height: 5vw;
@@ -1825,6 +1966,9 @@ video {
   }
 }
 @media (min-width: 992px) {
+  .tituloContacto {
+    margin: 0 0 4vw 0vw;
+  }
   .contactoMain {
     margin-top: 54vw;
   }
