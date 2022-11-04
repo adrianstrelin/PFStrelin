@@ -180,6 +180,7 @@
 
     .enlaceRecetas {
         max-height: 4vw;
+        font-size: 2.3vw;
     }
 
     .muchasRecetas {
@@ -240,6 +241,11 @@
         margin-top: -6vw;
     }
 
+    .recetasMain {
+        width: 90vw;
+        margin-left: 2.4vw;
+    }
+
 
     .imagenesRecetas {
         grid-template-columns: 1fr 1fr 1fr;
@@ -259,9 +265,10 @@
     }
 
     .enlaceRecetas {
-        max-height: 6vw;
+        height: 7vw;
         align-items: center;
-        width: auto;
+        width: 19vw;
+        font-size: 1.4vw;
 
         a:hover {
             color: wheat;
@@ -296,6 +303,7 @@
         height: 7vw;
         align-items: center;
         width: auto;
+        font-size: 1.4vw;
 }
 
 .imagenRecetaCuatro img,
@@ -310,6 +318,7 @@
     
     .imagenesRecetas {
         margin: -75vw 0 0 7.5vw;
+        width: 89vw;
 
         img {
             width: 20vw;
@@ -320,11 +329,25 @@
         .enlaceRecetas {
             height: 4vw;
             align-items: center;
-            width: auto;
+            width: 17vw;
+            font-size: 1.1vw;
+            margin-top: 1.8vw;
     }
 
     .recetasMain {
         margin-bottom: -25vw;
+        margin-left: -2vw;
+
+    }
+
+    .lineaImagenesRecetas {
+        margin-top: -29vw;
+        margin-bottom: 6vw;
+    }
+
+    .lineaRecetasSuscripcion {
+        margin-top: -2vw;
+        margin-bottom: 3vw;
     }
 
 

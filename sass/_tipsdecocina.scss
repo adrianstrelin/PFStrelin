@@ -292,7 +292,7 @@ video {
 
 
     .tipsCocinaMain {
-        margin-top: 53.7vw;
+        margin-top: 52.9vw;
     }
 
     .lineaTipsCocinaVideosUno {
@@ -313,5 +313,74 @@ video {
         margin-top: 2.5vw;
         margin-bottom: 2.5vw;
     }
+
+}
+
+
+@media (min-width: 1200px) {
+
+
+    .tipsCocinaMain {
+        margin-top: 45.6vw;
+    }
+
+
+    .cabeceraVideos {
+        height: 24vw;
+        margin: 0.5vw 0 4vw 0;
+        p {
+            font-size: 1.1vw;
+            margin-left: auto;
+            margin-top: 3vw;
+            padding: 0 6vw 0 6vw;
+        }
+
+        h2 {
+            font-size: 1.8vw;
+            margin-top: -2vw;
+            margin-bottom: -2vw;
+        }
+
+        .fechaVideos {
+            margin: 0 -1vw 3vw 0;
+        }
+
+    }
+
+    .ratio {
+        width: 85%;
+    }
+
+    .videosTipsCocina {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: -3vw 0vw -3vw 0vw;
+    }
+
+    .lineaTipsCocinaVideosDos {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .lineaTipsCocinaVideosTres {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .lineaTipsCocinaVideosCuatro {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .lineaTipsCocinaVideosCinco {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
+
+
+
+
 
 }

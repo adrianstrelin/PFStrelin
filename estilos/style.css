@@ -1308,10 +1308,10 @@ footer {
     height: 25vw;
   }
   .carousel-control-prev {
-    margin-left: 33vw;
+    margin-left: 12vw;
   }
   .carousel-control-next {
-    margin-left: -11.5vw;
+    margin-right: -4vw;
   }
   .textoChefs {
     margin-top: -10.5vw;
@@ -1531,6 +1531,7 @@ footer {
   }
   .enlaceRecetas {
     max-height: 4vw;
+    font-size: 2.3vw;
   }
   .muchasRecetas {
     grid-template-columns: 1fr 1fr;
@@ -1581,6 +1582,10 @@ footer {
     width: 80%;
     margin-top: -6vw;
   }
+  .recetasMain {
+    width: 90vw;
+    margin-left: 2.4vw;
+  }
   .imagenesRecetas {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -1596,9 +1601,10 @@ footer {
     border-bottom: 3px solid wheat;
   }
   .enlaceRecetas {
-    max-height: 6vw;
+    height: 7vw;
     align-items: center;
-    width: auto;
+    width: 19vw;
+    font-size: 1.4vw;
   }
   .enlaceRecetas a:hover {
     color: wheat;
@@ -1624,6 +1630,7 @@ footer {
     height: 7vw;
     align-items: center;
     width: auto;
+    font-size: 1.4vw;
   }
   .imagenRecetaCuatro img,
 .imagenRecetaCinco img,
@@ -1634,6 +1641,7 @@ footer {
 @media (min-width: 1200px) {
   .imagenesRecetas {
     margin: -75vw 0 0 7.5vw;
+    width: 89vw;
   }
   .imagenesRecetas img {
     width: 20vw;
@@ -1642,10 +1650,21 @@ footer {
   .enlaceRecetas {
     height: 4vw;
     align-items: center;
-    width: auto;
+    width: 17vw;
+    font-size: 1.1vw;
+    margin-top: 1.8vw;
   }
   .recetasMain {
     margin-bottom: -25vw;
+    margin-left: -2vw;
+  }
+  .lineaImagenesRecetas {
+    margin-top: -29vw;
+    margin-bottom: 6vw;
+  }
+  .lineaRecetasSuscripcion {
+    margin-top: -2vw;
+    margin-bottom: 3vw;
   }
 }
 /*NOMBREA AREAS DE TIPS DE COCINA*/
@@ -1893,7 +1912,7 @@ video {
     margin: 0 -1vw 3vw 0;
   }
   .tipsCocinaMain {
-    margin-top: 53.7vw;
+    margin-top: 52.9vw;
   }
   .lineaTipsCocinaVideosUno {
     margin: 3.3vw 0 2.3vw 5vw;
@@ -1909,6 +1928,54 @@ video {
   .lineaTipsCocinaVideosCinco {
     margin-top: 2.5vw;
     margin-bottom: 2.5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .tipsCocinaMain {
+    margin-top: 45.6vw;
+  }
+  .cabeceraVideos {
+    height: 24vw;
+    margin: 0.5vw 0 4vw 0;
+  }
+  .cabeceraVideos p {
+    font-size: 1.1vw;
+    margin-left: auto;
+    margin-top: 3vw;
+    padding: 0 6vw 0 6vw;
+  }
+  .cabeceraVideos h2 {
+    font-size: 1.8vw;
+    margin-top: -2vw;
+    margin-bottom: -2vw;
+  }
+  .cabeceraVideos .fechaVideos {
+    margin: 0 -1vw 3vw 0;
+  }
+  .ratio {
+    width: 85%;
+  }
+  .videosTipsCocina {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin: -3vw 0vw -3vw 0vw;
+  }
+  .lineaTipsCocinaVideosDos {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .lineaTipsCocinaVideosTres {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .lineaTipsCocinaVideosCuatro {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .lineaTipsCocinaVideosCinco {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
   }
 }
 .btn-dark-md {
@@ -2013,7 +2080,7 @@ video {
 .cardCinco,
 .cardSeis {
   width: 68.75vw;
-  min-height: 89.5vw;
+  height: 113.5vw;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 4.1vw;
@@ -2059,7 +2126,7 @@ video {
 .cardCinco p,
 .cardSeis p {
   padding: 0 1rem;
-  font-size: 3.3vw;
+  font-size: 3.5vw;
   font-weight: 300;
 }
 
@@ -2107,7 +2174,7 @@ video {
 .cardCinco,
 .cardSeis {
     width: 41.75vw;
-    min-height: 76.5vw;
+    height: 71.5vw;
   }
   .contenedorCards .cardUno picture img,
 .cardDos picture img,
@@ -2138,7 +2205,7 @@ video {
 .cardCuatro h2,
 .cardCinco h2,
 .cardSeis h2 {
-    font-size: 3.4vw;
+    font-size: 3vw;
   }
   .contenedorCards .cardUno p,
 .cardDos p,
@@ -2146,7 +2213,7 @@ video {
 .cardCuatro p,
 .cardCinco p,
 .cardSeis p {
-    font-size: 2.7vw;
+    font-size: 2.2vw;
   }
 }
 @media (min-width: 768px) {
@@ -2166,7 +2233,7 @@ video {
     flex-direction: column;
     justify-content: flex-start;
     width: 24.75vw;
-    min-height: 20.5vw;
+    height: 54.5vw;
     margin-bottom: 6vw;
     padding: -2vw;
   }
@@ -2184,7 +2251,7 @@ video {
 .cardCuatro h2,
 .cardCinco h2,
 .cardSeis h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .contenedorCards .cardUno p,
 .cardDos p,
@@ -2192,9 +2259,11 @@ video {
 .cardCuatro p,
 .cardCinco p,
 .cardSeis p {
-    font-size: 1.8vw;
+    font-size: 1.6vw;
   }
-  .cardCuatro, .cardCinco, .cardSeis {
+  .cardCuatro,
+.cardCinco,
+.cardSeis {
     margin-top: -1vw;
   }
   .lineaSaludNutricionUno {
@@ -2205,7 +2274,7 @@ video {
   .lineaSaludNutricionSiete {
     height: 5vw;
     width: 80%;
-    margin: -1.4vw 0 5vw 10vw;
+    margin: -6.4vw 0 4vw 10vw;
   }
 }
 @media (min-width: 992px) {
@@ -2232,7 +2301,7 @@ video {
 .cardCinco,
 .cardSeis {
     width: 25vw;
-    min-height: 30.5vw;
+    height: 41.5vw;
   }
   .lineaSaludNutricionUno {
     height: 5vw;
@@ -2243,5 +2312,45 @@ video {
     height: 5vw;
     width: 80%;
     margin: -5.4vw 0 3.7vw 10vw;
+  }
+}
+@media (min-width: 1200px) {
+  .lineaSaludNutricionUno {
+    height: 5vw;
+    width: 80%;
+    margin: -85.5vw 0 0vw 10vw;
+  }
+  .lineaSaludNutricionSiete {
+    height: 5vw;
+    width: 80%;
+    margin: -7.4vw 0 3.7vw 10vw;
+  }
+  .saludNutricionMain {
+    margin-top: 127vw;
+  }
+  .contenedorCards .cardUno,
+.cardDos,
+.cardTres,
+.cardCuatro,
+.cardCinco,
+.cardSeis {
+    width: 21vw;
+    height: 35.5vw;
+  }
+  .contenedorCards .cardUno h2,
+.cardDos h2,
+.cardTres h2,
+.cardCuatro h2,
+.cardCinco h2,
+.cardSeis h2 {
+    font-size: 1.4vw;
+  }
+  .contenedorCards .cardUno p,
+.cardDos p,
+.cardTres p,
+.cardCuatro p,
+.cardCinco p,
+.cardSeis p {
+    font-size: 1.1vw;
   }
 }/*# sourceMappingURL=style.css.map */
