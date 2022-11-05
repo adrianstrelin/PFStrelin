@@ -626,10 +626,10 @@ footer a:hover {
   }
   .botonSource {
     max-width: 3vw;
-    height: 2.8vw;
+    height: 2.2vw;
     text-decoration: none;
     color: white;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
   }
   .imagenSuscripcion {
     display: grid;
@@ -780,10 +780,8 @@ footer {
   background-image: url(../img/fondomain-large.webp);
   background-position: center;
   background-repeat: no-repeat;
-  max-height: 63vw;
-  width: auto;
   background-size: cover;
-  height: 100vw;
+  height: 63vw;
   width: auto;
 }
 .verRecetas h2 {
@@ -836,19 +834,11 @@ footer {
   font-weight: 300;
 }
 
-.lineaCarruselChef {
-  height: 5vw;
-  width: 80%;
-  margin-left: 10vw;
-  margin-top: 6vw;
-}
-
 .textoChefs {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin-top: -60vw;
-  margin-bottom: 5vw;
+  margin: -60vw 0 5vw 0;
   background-color: wheat;
 }
 .textoChefs h2 {
@@ -859,8 +849,7 @@ footer {
 .textoChefs p {
   font-size: 3vw;
   font-weight: 300;
-  margin: 2.4vw 4vw -5vw 3vw;
-  margin-bottom: 6vw;
+  margin: 2.4vw 4vw 6vw 3vw;
 }
 
 .imagenesChefs {
@@ -907,13 +896,6 @@ footer {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-.lineaChefValoracion {
-  height: 5vw;
-  width: 80%;
-  margin-left: 10vw;
-  margin-top: 6vw;
-}
-
 .textoValoracion {
   display: grid;
   grid-template-columns: 1fr;
@@ -956,41 +938,17 @@ footer {
     height: 61vw;
   }
   .verRecetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     margin: -12vw 0 -5vw 0;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    max-height: 63vw;
-    width: auto;
-    background-size: cover;
-    height: 100vw;
-    width: auto;
   }
   .verRecetas h2 {
     font-size: 5vw;
     margin: -1vw 0 -21vw 0;
-    font-weight: 500;
   }
   .verRecetas a {
-    cursor: pointer;
-    border: 0;
-    font-weight: bold;
-    color: black;
-    border-radius: 10vw;
-    max-height: 8vw;
-    width: 30vw;
-    font-size: 2.7vw;
-    padding: 0.6vw;
     margin: -20vw 0 0 0;
   }
   .verRecetas p {
-    font-size: 3vw;
     margin-top: 0vw;
-    font-weight: 300;
   }
   .textoChefs {
     margin-top: 34vw;
@@ -1006,7 +964,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     max-height: 244vw;
-    width: 100vw;
   }
   .parrafoChefs {
     display: flex;
@@ -1020,10 +977,6 @@ footer {
     font-size: 5vw;
   }
   .imagenesValoracion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 100vw;
     height: 83vw;
   }
 }
@@ -1034,16 +987,8 @@ footer {
     width: 119vw;
   }
   .verRecetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     margin: -12vw 0 -5vw -14vw;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
     max-height: 30vw;
-    background-size: cover;
     width: 55vw;
   }
   .verRecetas h2 {
@@ -1052,15 +997,10 @@ footer {
     font-weight: 500;
   }
   .verRecetas a {
-    cursor: pointer;
-    border: 0;
-    font-weight: bold;
     color: black;
-    border-radius: 10vw;
     max-height: 5vw;
     width: 19vw;
     font-size: 1.7vw;
-    padding: 0.6vw;
     margin: -4vw 0 0 0;
   }
   .verRecetas p {
@@ -1081,9 +1021,6 @@ footer {
     margin-bottom: 11vw;
   }
   .imagenesChefs {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: -5.1vw;
@@ -1091,7 +1028,6 @@ footer {
     height: 58vw;
     width: 100vw;
     gap: 0.5vw;
-    background-color: wheat;
   }
   .chef {
     width: 4vw;
@@ -1129,25 +1065,6 @@ footer {
 .container-sm {
     max-width: 1500px;
   }
-  .buscaRecetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: -15vw 0 4vw -49vw;
-  }
-  .buscaRecetas a {
-    cursor: pointer;
-    border: 0;
-    font-weight: bold;
-    background-color: #FF7F50;
-    color: black;
-    border-radius: 10vw;
-    max-height: 5vw;
-    width: 13vw;
-    font-size: 1.3vw;
-    padding: 0.6vw;
-  }
   .parrafoChefs {
     height: 5vw;
     width: 13vw;
@@ -1168,64 +1085,20 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .inicioMain {
-    height: 26vw;
-    margin-left: -20vw;
-    width: 119vw;
-  }
-  .verRecetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: -12vw 0 -5vw -14vw;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    max-height: 30vw;
-    background-size: cover;
-    width: 55vw;
-  }
   .verRecetas h2 {
     font-size: 3vw;
-    margin: 2vw 0 -21vw 0;
-    font-weight: 500;
   }
   .verRecetas a {
     cursor: pointer;
     border: 0;
     font-weight: bold;
-    color: black;
     border-radius: 10vw;
-    max-height: 5vw;
-    width: 19vw;
     font-size: 1.3vw;
     padding: 0.6vw;
-    margin: -4vw 0 0 0;
   }
   .verRecetas p {
     font-size: 1.7vw;
     margin-top: 18vw;
-    font-weight: 300;
-  }
-  .buscaRecetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: -15vw 0 4vw -46vw;
-  }
-  .buscaRecetas a {
-    cursor: pointer;
-    border: 0;
-    font-weight: bold;
-    background-color: #FF7F50;
-    color: black;
-    border-radius: 10vw;
-    max-height: 5vw;
-    width: 13vw;
-    font-size: 1vw;
-    padding: 0.6vw;
   }
   .container,
 .container-sm {
@@ -1265,16 +1138,8 @@ footer {
     height: 21vw;
   }
   .verRecetas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     margin: -12vw 0 -5vw -14vw;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
     max-height: 25vw;
-    background-size: cover;
     width: 61vw;
   }
   .verRecetas h2 {
@@ -1283,15 +1148,9 @@ footer {
     font-weight: 500;
   }
   .verRecetas a {
-    cursor: pointer;
-    border: 0;
-    font-weight: bold;
-    color: black;
-    border-radius: 10vw;
     max-height: 5vw;
     width: 13vw;
     font-size: 1.1vw;
-    padding: 0.6vw;
     margin: -4.5vw 0 0 0;
   }
   .verRecetas p {
@@ -1324,9 +1183,6 @@ footer {
     font-size: 1.3vw;
   }
   .imagenesChefs {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: -5.1vw;
@@ -1335,7 +1191,6 @@ footer {
     height: 42vw;
     width: 100vw;
     gap: 0.5vw;
-    background-color: wheat;
   }
   .chef {
     margin: -12vw 0 4vw 8.5vw;
@@ -1381,41 +1236,17 @@ footer {
 }
 
 /* RECETAS */
-.lineaImagenesRecetasUno {
-  height: 5vw;
-  width: 80%;
-  margin-left: 10vw;
-}
-
-.lineaImagenesRecetasDos {
-  height: 5vw;
-  width: 80%;
-  margin-left: 10vw;
-  margin-top: -6vw;
-  margin-bottom: 5vw;
-}
-
-.contenedorRecetas {
-  background-color: white;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  display: grid;
-  grid-template-areas: "imagenesRecetas" "sectionRecetas" "imagenSuscripcion" "footer";
-}
-
 .muchasRecetas {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  align-items: center;
-  margin-bottom: 10vw;
   background-image: url(../img/fondomain-large.webp);
   background-position: center;
   background-repeat: no-repeat;
-  width: auto;
   background-size: cover;
+  align-items: center;
+  margin-bottom: 10vw;
+  width: auto;
   width: auto;
 }
 
@@ -1442,9 +1273,7 @@ footer {
 .lineaImagenesRecetas {
   height: 5vw;
   width: 80%;
-  margin-left: 10vw;
-  margin-top: -2vw;
-  margin-bottom: 5vw;
+  margin: -2vw 0 5vw 10vw;
 }
 
 .recetasMain {
@@ -1481,9 +1310,7 @@ footer {
 .lineaRecetasSuscripcion {
   height: 5vw;
   width: 80%;
-  margin-left: 10vw;
-  margin-top: -5.5vw;
-  margin-bottom: 5vw;
+  margin: -5.5vw 0 5vw 10vw;
 }
 
 @media (min-width: 576px) {
@@ -1491,14 +1318,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  .lineaImagenesRecetasUno {
-    margin-left: 10vw;
-    margin-top: -10vw;
-  }
-  .lineaImagenesRecetasDos {
-    margin-left: 10vw;
-    margin-top: -7vw;
   }
   .lineaRecetasSuscripcion {
     margin-top: -1vw;
@@ -1518,8 +1337,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    margin-top: 10vw;
-    margin-bottom: 5vw;
+    margin: 10vw 0 5vw 0;
     gap: 6vw;
     -moz-columns: 2;
          columns: 2;
@@ -1536,8 +1354,7 @@ footer {
   .muchasRecetas {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin-top: -3vw;
-    margin-bottom: 5vw;
+    margin: -3vw 0 5vw 0;
     padding: 4vw 0 4vw 0;
   }
   .muchasRecetasUno {
@@ -1563,24 +1380,8 @@ footer {
 }
 @media (min-width: 768px) {
   /* RECETAS */
-  .contenedorRecetas {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
   .tituloRecetas {
-    margin-left: -1vw;
-    margin-top: -1vw;
-    margin-left: 1vw;
-  }
-  .lineaImagenesRecetasUno {
-    height: 5vw;
-    width: 80%;
-    margin-top: 3vw;
-  }
-  .lineaImagenesRecetasDos {
-    height: 5vw;
-    width: 80%;
-    margin-top: -6vw;
+    margin: -1vw 0 0 1vw;
   }
   .recetasMain {
     width: 90vw;
@@ -1596,6 +1397,9 @@ footer {
   .imagenesRecetas img {
     width: 27vw;
     height: 20vw;
+  }
+  .muchasRecetas {
+    font-size: 1.7vw;
   }
   .BorderBottom a:hover {
     border-bottom: 3px solid wheat;
@@ -1615,7 +1419,6 @@ footer {
 }
 @media (min-width: 992px) {
   .tituloRecetas {
-    margin-left: -1vw;
     margin-top: 0vw;
     margin-left: 0vw;
   }
@@ -1655,12 +1458,14 @@ footer {
     margin-top: 1.8vw;
   }
   .recetasMain {
-    margin-bottom: -25vw;
+    margin-bottom: -28vw;
     margin-left: -2vw;
   }
+  .muchasRecetas {
+    margin: -4vw 0 5vw 0;
+  }
   .lineaImagenesRecetas {
-    margin-top: -29vw;
-    margin-bottom: 6vw;
+    margin-top: -29vw 0 6vw 0;
   }
   .lineaRecetasSuscripcion {
     margin-top: -2vw;
@@ -1842,8 +1647,7 @@ video {
   }
   .cabeceraVideos h2 {
     font-size: 3vw;
-    margin-top: -2vw;
-    margin-bottom: -2vw;
+    margin: -2vw 0 -2vw 0;
   }
   .cabeceraVideos .fechaVideos {
     margin: 0 -1vw 3vw 0;
@@ -1851,37 +1655,27 @@ video {
   .lineaTipsCocinaVideosUno {
     height: 5vw;
     width: 90%;
-    margin-left: 5vw;
-    margin-top: 3vw;
-    margin-bottom: 2vw;
+    margin: 3vw 0 2vw 5vw;
   }
   .lineaTipsCocinaVideosDos {
     height: 5vw;
     width: 90%;
-    margin-left: 5vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin: 2vw 0 2vw 5vw;
   }
   .lineaTipsCocinaVideosTres {
     height: 5vw;
     width: 90%;
-    margin-left: 5vw;
-    margin-top: 2vw;
-    margin-bottom: 2.2vw;
+    margin: 2vw 0 2.2vw 5vw;
   }
   .lineaTipsCocinaVideosCuatro {
     height: 5vw;
     width: 90%;
-    margin-left: 5vw;
-    margin-top: 2.5vw;
-    margin-bottom: 2.4vw;
+    margin: 2.5vw 0 2.4vw 5vw;
   }
   .lineaTipsCocinaVideosCinco {
     height: 5vw;
     width: 90%;
-    margin-left: 5vw;
-    margin-top: 2.3vw;
-    margin-bottom: 4vw;
+    margin: 2.3vw 0 4vw 5vw;
   }
   .fechaVideos {
     font-size: 1.5vw;
@@ -1905,8 +1699,7 @@ video {
   }
   .cabeceraVideos h2 {
     font-size: 2.5vw;
-    margin-top: -2vw;
-    margin-bottom: -2vw;
+    margin: -2vw 0 -2vw 0;
   }
   .cabeceraVideos .fechaVideos {
     margin: 0 -1vw 3vw 0;
@@ -1985,21 +1778,18 @@ video {
 }
 
 .contactoMain {
-  margin-top: 125vw;
   background-image: url(../img/fondomain-large.webp);
   background-position: center;
   background-repeat: no-repeat;
-  width: auto;
   background-size: cover;
+  margin-top: 125vw;
   width: auto;
 }
 
 .lineaContactos {
   height: 5vw;
   width: 80%;
-  margin-left: 10vw;
-  margin-top: 1vw;
-  margin-bottom: 6vw;
+  margin: 0vw 0 6vw 10vw;
 }
 
 .form-control {
@@ -2028,8 +1818,7 @@ video {
   .lineaContactos {
     height: 5vw;
     width: 70%;
-    margin-left: 15vw;
-    margin-bottom: 6vw;
+    margin: 0 0 6vw 15vw;
   }
 }
 @media (min-width: 992px) {
@@ -2043,6 +1832,19 @@ video {
     height: 5vw;
     width: 70%;
     margin: -1vw 0 4vw 15vw;
+  }
+}
+@media (min-width: 1200px) {
+  .tituloContacto {
+    margin: 0 0 4vw 0vw;
+  }
+  .contactoMain {
+    margin: 45vw 0 3vw 0;
+    height: 38vw;
+  }
+  .lineaContactos {
+    width: 90%;
+    margin: -3vw 0 3vw 5vw;
   }
 }
 /* NOMBRE AREAS SALUD Y NUTRICION */
@@ -2143,29 +1945,22 @@ video {
 .lineaSaludNutricionUno {
   height: 5vw;
   width: 80%;
-  margin-left: 10vw;
-  margin-top: -6vw;
-  margin-bottom: 3vw;
+  margin: -6vw 0 3vw 10vw;
 }
 
 .lineaSaludNutricionSiete {
   height: 5vw;
   width: 80%;
-  margin-left: 10vw;
-  margin-top: 3vw;
-  margin-bottom: 7vw;
+  margin: 3vw 0 7vw 10vw;
 }
 
 @media (min-width: 576px) {
   .contenedorSaludNutricion {
-    background-color: white;
-    margin-bottom: 1.5em;
     grid-template-areas: "contenedorCards contenedorCards" "cardUno cardUno" "cardDos cardDos" "cardTres cardTres" "cardCuatro cardCuatro" "cardCinco cardCinco" "cardSeis cardSeis";
   }
   .contenedorCards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    justify-items: center;
   }
   .contenedorCards .cardUno,
 .cardDos,
@@ -2188,16 +1983,12 @@ video {
   .lineaSaludNutricionUno {
     height: 5vw;
     width: 80%;
-    margin-left: 10vw;
-    margin-top: -47vw;
-    margin-bottom: 2vw;
+    margin: -47vw 0 2vw 10vw;
   }
   .lineaSaludNutricionSiete {
     height: 5vw;
     width: 80%;
-    margin-left: 10vw;
-    margin-top: 2.6vw;
-    margin-bottom: 6vw;
+    margin: 2.6vw 0 6vw 10vw;
   }
   .contenedorCards .cardUno h2,
 .cardDos h2,
@@ -2267,13 +2058,9 @@ video {
     margin-top: -1vw;
   }
   .lineaSaludNutricionUno {
-    height: 5vw;
-    width: 80%;
     margin: -71vw 0 1vw 10vw;
   }
   .lineaSaludNutricionSiete {
-    height: 5vw;
-    width: 80%;
     margin: -6.4vw 0 4vw 10vw;
   }
 }
@@ -2304,25 +2091,17 @@ video {
     height: 41.5vw;
   }
   .lineaSaludNutricionUno {
-    height: 5vw;
-    width: 80%;
     margin: -77.5vw 0 0vw 10vw;
   }
   .lineaSaludNutricionSiete {
-    height: 5vw;
-    width: 80%;
     margin: -5.4vw 0 3.7vw 10vw;
   }
 }
 @media (min-width: 1200px) {
   .lineaSaludNutricionUno {
-    height: 5vw;
-    width: 80%;
     margin: -85.5vw 0 0vw 10vw;
   }
   .lineaSaludNutricionSiete {
-    height: 5vw;
-    width: 80%;
     margin: -7.4vw 0 3.7vw 10vw;
   }
   .saludNutricionMain {

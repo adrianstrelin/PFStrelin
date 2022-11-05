@@ -5,21 +5,15 @@
 }
 
 .contactoMain {
+    @include fondo-main;
     margin-top: 125vw;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: auto;
-    background-size: cover;
     width: auto;
 }
 
 .lineaContactos {
     height: 5vw;
     width: 80%;
-    margin-left: 10vw;
-    margin-top: 1vw;
-    margin-bottom: 6vw;
+    margin: 0vw 0 6vw 10vw;
 }
 
 .form-control {
@@ -58,8 +52,7 @@
     .lineaContactos {
         height: 5vw;
         width: 70%;
-        margin-left: 15vw;
-        margin-bottom: 6vw;
+        margin: 0 0 6vw 15vw;
     }
 
 
@@ -82,4 +75,22 @@
         width: 70%;
         margin: -1vw 0 4vw 15vw;
     }
+}
+
+@media (min-width: 1200px) {
+
+    .tituloContacto {
+        margin: 0 0 4vw 0vw;
+    }
+    
+    .contactoMain {
+        margin: 45vw 0 3vw 0;
+        height: 38vw;
+    }
+
+    .lineaContactos {
+        width: 90%;
+        margin: -3vw 0 3vw 5vw;
+    }
+
 }

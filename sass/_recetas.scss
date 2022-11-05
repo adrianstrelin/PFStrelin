@@ -24,43 +24,14 @@
 /* RECETAS */
 
 
-.lineaImagenesRecetasUno {
-    height: 5vw;
-    width: 80%;
-    margin-left: 10vw;
-}
 
-.lineaImagenesRecetasDos {
-    height: 5vw;
-    width: 80%;
-    margin-left: 10vw;
-    margin-top: -6vw;
-    margin-bottom: 5vw;
-}
-
-.contenedorRecetas {
-    background-color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    display: grid;
-    grid-template-areas:
-        "imagenesRecetas"
-        "sectionRecetas"
-        "imagenSuscripcion"
-        "footer";
-}
 
 .muchasRecetas {
     @include elementos-grid;
+    @include fondo-main;
     align-items: center;
     margin-bottom: 10vw;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
     width: auto;
-    background-size: cover;
     width: auto;
 }  
 
@@ -88,9 +59,7 @@
 .lineaImagenesRecetas {
     height: 5vw;
     width: 80%;
-    margin-left: 10vw;
-    margin-top: -2vw;
-    margin-bottom: 5vw;
+    margin: -2vw 0 5vw 10vw;
 }
 
 .recetasMain {
@@ -125,9 +94,7 @@
 .lineaRecetasSuscripcion {
     height: 5vw;
     width: 80%;
-    margin-left: 10vw;
-    margin-top: -5.5vw;
-    margin-bottom: 5vw;
+    margin: -5.5vw 0 5vw 10vw;
 }
 
 @media (min-width: 576px) {
@@ -135,18 +102,8 @@
     .tituloRecetas {
         @include elementos-flex-row;
         justify-content: center;
-
     }
 
-    .lineaImagenesRecetasUno {
-        margin-left: 10vw;
-        margin-top: -10vw;
-    }
-
-    .lineaImagenesRecetasDos {
-        margin-left: 10vw;
-        margin-top: -7vw;
-    }
 
     .lineaRecetasSuscripcion {
         margin-top: -1vw;
@@ -166,8 +123,7 @@
     .sectionRecetas {
         @include elementos-grid;
         align-items: center;
-        margin-top: 10vw;
-        margin-bottom: 5vw;
+        margin: 10vw 0 5vw 0;
         gap: 6vw;
         columns: 2;
     }
@@ -186,8 +142,7 @@
     .muchasRecetas {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        margin-top: -3vw;
-        margin-bottom: 5vw;
+        margin: -3vw 0 5vw 0;
         padding: 4vw 0 4vw 0;
     }
 
@@ -218,28 +173,13 @@
 
     /* RECETAS */
     
-    .contenedorRecetas {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
 
     .tituloRecetas {
-        margin-left: -1vw;
-        margin-top: -1vw;
-        margin-left: 1vw;
+        margin: -1vw 0 0 1vw;
     }
 
-    .lineaImagenesRecetasUno {
-        height: 5vw;
-        width: 80%;
-        margin-top: 3vw;
-    }
 
-    .lineaImagenesRecetasDos {
-        height: 5vw;
-        width: 80%;
-        margin-top: -6vw;
-    }
+
 
     .recetasMain {
         width: 90vw;
@@ -257,6 +197,10 @@
             width: 27vw;
             height: 20vw;
         }
+    }
+
+    .muchasRecetas {
+        font-size: 1.7vw;
     }
 
 
@@ -284,7 +228,6 @@
 @media (min-width: 992px) {
 
     .tituloRecetas {
-        margin-left: -1vw;
         margin-top: 0vw;
         margin-left: 0vw;
     }
@@ -335,14 +278,17 @@
     }
 
     .recetasMain {
-        margin-bottom: -25vw;
+        margin-bottom: -28vw;
         margin-left: -2vw;
 
     }
 
+    .muchasRecetas {
+        margin: -4vw 0 5vw 0;
+    }
+
     .lineaImagenesRecetas {
-        margin-top: -29vw;
-        margin-bottom: 6vw;
+        margin-top: -29vw 0 6vw 0;
     }
 
     .lineaRecetasSuscripcion {

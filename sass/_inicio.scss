@@ -89,13 +89,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin: -12vw 0 -5vw 0;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    max-height: 63vw;
-    width: auto;
-    background-size: cover;
-    height: 100vw;
+    @include fondo-main;
+    height: 63vw;
     width: auto;
 
     h2 {
@@ -153,18 +148,11 @@ footer {
     font-weight: 300;
 }
 
-.lineaCarruselChef {
-    height: 5vw;
-    width: 80%;
-    margin-left: 10vw;
-    margin-top: 6vw;
-}
 
 
 .textoChefs {
     @include elementos-grid;
-    margin-top: -60vw;
-    margin-bottom: 5vw;
+    margin: -60vw 0 5vw 0;
     background-color: wheat;
 
     h2 {
@@ -176,8 +164,7 @@ footer {
     p {
         font-size: 3vw;
         font-weight: 300;
-        margin: 2.4vw 4vw -5vw 3vw;
-        margin-bottom: 6vw;
+        margin: 2.4vw 4vw 6vw 3vw;
     }
 }
 
@@ -227,19 +214,10 @@ footer {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 
-.lineaChefValoracion {
-    height: 5vw;
-    width: 80%;
-    margin-left: 10vw;
-    margin-top: 6vw;
-}
 
 .textoValoracion {
     @include elementos-grid;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include fondo-main;
     padding-top: 14vw;
 
 
@@ -255,10 +233,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     width: 100vw;
     height: 80vw;
-    background-image: url(../img/fondomain-large.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include fondo-main;
 }
 
 
@@ -294,43 +269,20 @@ footer {
 
 
     .verRecetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         margin: -12vw 0 -5vw 0;
-        background-image: url(../img/fondomain-large.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        max-height: 63vw;
-        width: auto;
-        background-size: cover;
-        height: 100vw;
-        width: auto;
+        
 
         h2 {
             font-size: 5vw;
             margin: -1vw 0 -21vw 0;
-            font-weight: 500;
         }
 
         a {
-            cursor: pointer;
-            border: 0;
-            font-weight: bold;
-            color: black;
-            border-radius: 10vw;
-            max-height: 8vw;
-            width: 30vw;
-            font-size: 2.7vw;
-            padding: 0.6vw;
             margin: -20vw 0 0 0;
         }
 
         p {
-            font-size: 3vw;
             margin-top: 0vw;
-            font-weight: 300;
         }
 
     }
@@ -353,7 +305,6 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         max-height: 244vw;
-        width: 100vw;
     }
 
     .parrafoChefs {
@@ -372,10 +323,6 @@ footer {
 
 
     .imagenesValoracion {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        width: 100vw;
         height: 83vw;
     }
 }
@@ -391,16 +338,8 @@ footer {
     }
 
     .verRecetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         margin: -12vw 0 -5vw -14vw;
-        background-image: url(../img/fondomain-large.webp);
-        background-position: center;
-        background-repeat: no-repeat;
         max-height: 30vw;
-        background-size: cover;
         width: 55vw;
 
         h2 {
@@ -410,15 +349,10 @@ footer {
         }
 
         a {
-            cursor: pointer;
-            border: 0;
-            font-weight: bold;
             color: black;
-            border-radius: 10vw;
             max-height: 5vw;
             width: 19vw;
             font-size: 1.7vw;
-            padding: 0.6vw;
             margin: -4vw 0 0 0;
         }
 
@@ -446,7 +380,6 @@ footer {
     }
 
     .imagenesChefs {
-        @include elementos-grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         margin-top: -5.1vw;
@@ -454,7 +387,6 @@ footer {
         height: 58vw;
         width: 100vw;
         gap: 0.5vw;
-        background-color: wheat;
     }
 
     .chef {
@@ -506,28 +438,6 @@ footer {
     }
 
 
-    .buscaRecetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: -15vw 0 4vw -49vw;
-
-        a {
-            cursor: pointer;
-            border: 0;
-            font-weight: bold;
-            background-color: #FF7F50;
-            color: black;
-            border-radius: 10vw;
-            max-height: 5vw;
-            width: 13vw;
-            font-size: 1.3vw;
-            padding: 0.6vw;
-        }
-
-    }
-
 
     .parrafoChefs {
         height: 5vw;
@@ -557,73 +467,30 @@ footer {
 @media (min-width: 992px) {
 
 
-    .inicioMain {
-        height: 26vw;
-        margin-left: -20vw;
-        width: 119vw;
-    }
 
     .verRecetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin: -12vw 0 -5vw -14vw;
-        background-image: url(../img/fondomain-large.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        max-height: 30vw;
-        background-size: cover;
-        width: 55vw;
 
         h2 {
             font-size: 3vw;
-            margin: 2vw 0 -21vw 0;
-            font-weight: 500;
         }
 
         a {
             cursor: pointer;
             border: 0;
             font-weight: bold;
-            color: black;
             border-radius: 10vw;
-            max-height: 5vw;
-            width: 19vw;
             font-size: 1.3vw;
             padding: 0.6vw;
-            margin: -4vw 0 0 0;
         }
 
         p {
             font-size: 1.7vw;
             margin-top: 18vw;
-            font-weight: 300;
         }
 
     }
 
-    .buscaRecetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: -15vw 0 4vw -46vw;
-
-        a {
-            cursor: pointer;
-            border: 0;
-            font-weight: bold;
-            background-color: #FF7F50;
-            color: black;
-            border-radius: 10vw;
-            max-height: 5vw;
-            width: 13vw;
-            font-size: 1vw;
-            padding: 0.6vw;
-        }
-
-    }
+    
 
 
     .container,
@@ -683,16 +550,8 @@ footer {
     }
 
     .verRecetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         margin: -12vw 0 -5vw -14vw;
-        background-image: url(../img/fondomain-large.webp);
-        background-position: center;
-        background-repeat: no-repeat;
         max-height: 25vw;
-        background-size: cover;
         width: 61vw;
 
         h2 {
@@ -702,15 +561,9 @@ footer {
         }
 
         a {
-            cursor: pointer;
-            border: 0;
-            font-weight: bold;
-            color: black;
-            border-radius: 10vw;
             max-height: 5vw;
             width: 13vw;
             font-size: 1.1vw;
-            padding: 0.6vw;
             margin: -4.5vw 0 0 0;
         }
 
@@ -757,7 +610,6 @@ footer {
     }
 
     .imagenesChefs {
-        @include elementos-grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         margin-top: -5.1vw;
@@ -766,7 +618,6 @@ footer {
         height: 42vw;
         width: 100vw;
         gap: 0.5vw;
-        background-color: wheat;
     }
 
 

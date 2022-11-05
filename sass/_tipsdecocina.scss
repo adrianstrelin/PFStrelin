@@ -203,8 +203,7 @@ video {
 
         h2 {
             font-size: 3vw;
-            margin-top: -2vw;
-            margin-bottom: -2vw;
+            margin: -2vw 0 -2vw 0;
         }
 
         .fechaVideos {
@@ -216,41 +215,31 @@ video {
     .lineaTipsCocinaVideosUno {
         height: 5vw;
         width: 90%;
-        margin-left: 5vw;
-        margin-top: 3vw;
-        margin-bottom: 2vw;
+        margin: 3vw 0 2vw 5vw;
     }
 
     .lineaTipsCocinaVideosDos {
         height: 5vw;
         width: 90%;
-        margin-left: 5vw;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
+        margin: 2vw 0 2vw 5vw;
     }
 
     .lineaTipsCocinaVideosTres {
         height: 5vw;
         width: 90%;
-        margin-left: 5vw;
-        margin-top: 2vw;
-        margin-bottom: 2.2vw;
+        margin: 2vw 0 2.2vw 5vw;
     }
 
     .lineaTipsCocinaVideosCuatro {
         height: 5vw;
         width: 90%;
-        margin-left: 5vw;
-        margin-top: 2.5vw;
-        margin-bottom: 2.4vw;
+        margin: 2.5vw 0 2.4vw 5vw;
     }
 
     .lineaTipsCocinaVideosCinco {
         height: 5vw;
         width: 90%;
-        margin-left: 5vw;
-        margin-top: 2.3vw;
-        margin-bottom: 4vw;
+        margin: 2.3vw 0 4vw 5vw;
     }
 
 
@@ -280,8 +269,8 @@ video {
 
         h2 {
             font-size: 2.5vw;
-            margin-top: -2vw;
-            margin-bottom: -2vw;
+            margin: -2vw 0 -2vw 0;
+
         }
 
         .fechaVideos {

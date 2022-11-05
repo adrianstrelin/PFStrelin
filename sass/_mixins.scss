@@ -13,3 +13,10 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin fondo-main {
+    background-image: url(../img/fondomain-large.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
