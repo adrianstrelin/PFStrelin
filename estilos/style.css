@@ -116,8 +116,9 @@ header h1 {
   border: none;
   background: none;
   color: black;
-  width: 27vw;
+  width: 34vw;
   font-size: 3.5vw;
+  margin-left: 2vw;
 }
 
 .botonSource {
@@ -283,7 +284,8 @@ footer a:hover {
   .sourceReceta {
     font-size: 2.3vw;
     line-height: 5vw;
-    width: 19vw;
+    width: 26vw;
+    margin-left: 0vw;
   }
   .textoSuscripcionUno h3 {
     text-align: center;
@@ -376,9 +378,9 @@ footer a:hover {
     width: 26vw;
   }
   .sourceReceta {
-    outline: none;
     font-size: 2vw;
-    transition: 0.3s;
+    width: 20vw;
+    margin-left: 0vw;
   }
   .botonSource {
     max-width: 3vw;
@@ -515,7 +517,7 @@ footer a:hover {
   .sourceReceta {
     font-size: 1.8vw;
     line-height: 2vw;
-    width: 14vw;
+    width: 19vw;
   }
   .botonSource {
     height: 3.3vw;
@@ -585,7 +587,7 @@ footer a:hover {
     color: black;
     font-size: 1.4vw;
     line-height: 2vw;
-    width: 11vw;
+    width: 14vw;
   }
   .botonSource {
     max-width: 3vw;

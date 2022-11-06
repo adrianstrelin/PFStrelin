@@ -119,8 +119,9 @@ header {
     border: none;
     background: none;
     color: black;
-    width: 27vw;
+    width: 34vw;
     font-size: 3.5vw;
+    margin-left: 2vw;
 }
 
 .botonSource {
@@ -299,7 +300,8 @@ footer {
     .sourceReceta {
         font-size: 2.3vw;
         line-height: 5vw;
-        width: 19vw;
+        width: 26vw;
+        margin-left: 0vw;
     }
 
     .textoSuscripcionUno h3 {
@@ -419,9 +421,9 @@ footer {
     }
 
     .sourceReceta {
-        outline: none;
         font-size: 2vw;
-        transition: .3s;
+        width: 20vw;
+        margin-left: 0vw;
     }
 
     .botonSource {
@@ -587,7 +589,7 @@ footer {
     .sourceReceta {
         font-size: 1.8vw;
         line-height: 2vw;
-        width: 14vw;
+        width: 19vw;
     }
 
 
@@ -683,7 +685,7 @@ footer {
         color: black;
         font-size: 1.4vw;
         line-height: 2vw;
-        width: 11vw;
+        width: 14vw;
     }
 
 
