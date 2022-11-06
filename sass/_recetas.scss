@@ -234,7 +234,7 @@
 
 
     .imagenesRecetas {
-    margin-top: -66vw;
+    margin: -66vw 0 3vw .5vw;
     gap:6.5vw;
     }
 
@@ -249,6 +249,10 @@
         font-size: 1.4vw;
 }
 
+.muchasRecetas {
+    font-size: 1.4vw;
+}
+
 .imagenRecetaCuatro img,
 .imagenRecetaCinco img,
 .imagenRecetaSeis img {
@@ -260,7 +264,7 @@
 @media (min-width: 1200px) {
     
     .imagenesRecetas {
-        margin: -75vw 0 0 7.5vw;
+        margin: -75vw 0 0 7vw;
         width: 89vw;
 
         img {
@@ -285,6 +289,7 @@
 
     .muchasRecetas {
         margin: -4vw 0 5vw 0;
+        font-size: 1.1vw;
     }
 
     .lineaImagenesRecetas {

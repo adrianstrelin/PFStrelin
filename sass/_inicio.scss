@@ -364,6 +364,10 @@ footer {
 
     }
 
+    .verRecetas a:hover {
+        background-color: white;
+    }
+
     .textoChefs {
         margin-top: -8vw;
 
@@ -471,7 +475,7 @@ footer {
     .verRecetas {
 
         h2 {
-            font-size: 3vw;
+            font-size: 2.6vw;
         }
 
         a {
@@ -484,7 +488,7 @@ footer {
         }
 
         p {
-            font-size: 1.7vw;
+            font-size: 1.5vw;
             margin-top: 18vw;
         }
 
@@ -516,11 +520,11 @@ footer {
 
     .textoChefs {
         h2 {
-            font-size: 3vw;
+            font-size: 2.6vw;
         }
 
         p {
-            font-size: 1.7vw;
+            font-size: 1.5vw;
         }
     }
 
@@ -532,6 +536,13 @@ footer {
             margin-top: 4vw;
             font-weight: 600;
             font-size: 1.4vw;
+        }
+    }
+
+    .textoValoracion {
+
+        h2 {
+            font-size: 2.6vw;
         }
     }
 
